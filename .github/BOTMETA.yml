@@ -1894,6 +1894,7 @@ files:
     migrated_to: cisco.iosxr
   $plugins/terminal/ironware.py:
     maintainers: paulquack
+    migrated_to: ansible.ironware
   $plugins/terminal/junos.py:
     support: network
     maintainers: $team_networking
@@ -2305,27 +2306,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/compat/unittest.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/compat/__init__.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/compat/builtins.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/procenv.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/__init__.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/path.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/loader.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/modules/utils.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/module_utils/conftest.py:
     migrated_to: ansible.infoblox
   test/units/module_utils/network/aci/test_aci.py:
@@ -2791,7 +2792,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.ironware
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -13800,6 +13801,60 @@ files:
     migrated_to: ansible.infoblox
   test/integration/targets/nios_a_record/tasks/nios_a_record_idempotence.yml:
     migrated_to: ansible.infoblox
+  lib/ansible/plugins/action/ironware.py:
+    migrated_to: ansible.ironware
+  lib/ansible/plugins/doc_fragments/ironware.py:
+    migrated_to: ansible.ironware
+  lib/ansible/module_utils/network/ironware/ironware.py:
+    migrated_to: ansible.ironware
+  lib/ansible/module_utils/network/ironware/__init__.py:
+    migrated_to: ansible.ironware
+  lib/ansible/modules/network/ironware/ironware_facts.py:
+    migrated_to: ansible.ironware
+  lib/ansible/modules/network/ironware/ironware_config.py:
+    migrated_to: ansible.ironware
+  lib/ansible/modules/network/ironware/ironware_command.py:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/test_ironware_facts.py:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/__init__.py:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/ironware_config_defaults.cfg:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_mpls_vll_detail:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/dir:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/ironware_config_config.cfg:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_running-config:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_lldp_neighbors:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_mpls_vpls_detail:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_ipv6_interface:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_mpls_lsp_detail:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_memory:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_interfaces:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_mpls_vll-local_detail:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/ironware_config_src.cfg:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_version:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/fixtures/show_chassis:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/ironware_module.py:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/test_ironware_config.py:
+    migrated_to: ansible.ironware
+  test/units/modules/network/ironware/test_ironware_command.py:
+    migrated_to: ansible.ironware
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
