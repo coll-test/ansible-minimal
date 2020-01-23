@@ -2399,29 +2399,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/compat/unittest.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/compat/__init__.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/compat/builtins.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/procenv.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/__init__.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/path.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/loader.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/modules/utils.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.aci
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.nso
+    migrated_to: cisco.aci
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
