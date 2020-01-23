@@ -2244,27 +2244,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/compat/unittest.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/compat/__init__.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/compat/builtins.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/procenv.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/__init__.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/path.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/loader.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/modules/utils.py:
-    migrated_to: ansible.acme
+    migrated_to: ansible.aireos
   test/units/module_utils/conftest.py:
     migrated_to: ansible.acme
   test/units/module_utils/network/aci/test_aci.py:
@@ -2730,7 +2730,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.aireos
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -6941,6 +6941,36 @@ files:
     migrated_to: ansible.acme
   test/integration/targets/acme_account/tests/validate.yml:
     migrated_to: ansible.acme
+  lib/ansible/plugins/action/aireos.py:
+    migrated_to: ansible.aireos
+  lib/ansible/plugins/cliconf/aireos.py:
+    migrated_to: ansible.aireos
+  lib/ansible/plugins/doc_fragments/aireos.py:
+    migrated_to: ansible.aireos
+  lib/ansible/module_utils/network/aireos/aireos.py:
+    migrated_to: ansible.aireos
+  lib/ansible/module_utils/network/aireos/__init__.py:
+    migrated_to: ansible.aireos
+  lib/ansible/modules/network/aireos/aireos_config.py:
+    migrated_to: ansible.aireos
+  lib/ansible/modules/network/aireos/aireos_command.py:
+    migrated_to: ansible.aireos
+  lib/ansible/plugins/terminal/aireos.py:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/test_aireos_config.py:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/__init__.py:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/aireos_module.py:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/fixtures/show_sysinfo:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/fixtures/aireos_config_config.cfg:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/fixtures/aireos_config_src.cfg:
+    migrated_to: ansible.aireos
+  test/units/modules/network/aireos/test_aireos_command.py:
+    migrated_to: ansible.aireos
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
