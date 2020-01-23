@@ -1296,6 +1296,7 @@ files:
   $module_utils/storage/hpe3par/hpe3par.py: &id038
     maintainers: farhan7500 gautamphegde
     support: community
+    migrated_to: storage.hpe3par
   lib/ansible/playbook/handler.py:
     keywords:
     - handlers
@@ -2239,27 +2240,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/compat/unittest.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/compat/__init__.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/compat/builtins.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/procenv.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/yaml_helper.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/__init__.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/path.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/loader.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/mock/vault_helper.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/modules/utils.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2725,7 +2726,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: cisco.nxos
+    migrated_to: storage.hpe3par
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -5874,6 +5875,14 @@ files:
     migrated_to: cisco.nxos
   test/integration/targets/nxos_aaa_server/tests/common/tacacs.yaml:
     migrated_to: cisco.nxos
+  lib/ansible/module_utils/storage/hpe3par/__init__.py:
+    migrated_to: storage.hpe3par
+  lib/ansible/modules/storage/hpe3par/ss_3par_cpg.py:
+    migrated_to: storage.hpe3par
+  test/units/modules/storage/hpe3par/test_ss_3par_cpg.py:
+    migrated_to: storage.hpe3par
+  test/units/modules/storage/hpe3par/__init__.py:
+    migrated_to: storage.hpe3par
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
