@@ -1131,6 +1131,7 @@ files:
     support: core
   $module_utils/cloudscale.py:
     maintainers: $team_cloudscale
+    migrated_to: ansible.cloudscale
   $module_utils/cloudstack.py:
     maintainers: $team_cloudstack
     labels: cloudstack
@@ -10262,6 +10263,78 @@ files:
     migrated_to: ansible.cloudstack
   test/integration/targets/cs_account/tasks/main.yml:
     migrated_to: ansible.cloudstack
+  lib/ansible/plugins/doc_fragments/cloudscale.py:
+    migrated_to: ansible.cloudscale
+  lib/ansible/plugins/inventory/cloudscale.py:
+    migrated_to: ansible.cloudscale
+  lib/ansible/modules/cloud/cloudscale/cloudscale_volume.py:
+    migrated_to: ansible.cloudscale
+  lib/ansible/modules/cloud/cloudscale/cloudscale_server_group.py:
+    migrated_to: ansible.cloudscale
+  lib/ansible/modules/cloud/cloudscale/cloudscale_server.py:
+    migrated_to: ansible.cloudscale
+  lib/ansible/modules/cloud/cloudscale/cloudscale_floating_ip.py:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/aliases:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/meta/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/tasks/cleanup.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/tasks/failures.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/tasks/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/tasks/setup.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_volume/tasks/tests.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/aliases:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/defaults/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/tasks/cleanup_floating_ips.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/tasks/cleanup_server_groups.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/tasks/cleanup_servers.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/tasks/cleanup_volumes.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_common/tasks/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server_group/aliases:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server_group/meta/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server_group/tasks/failures.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server_group/tasks/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server_group/tasks/tests.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/aliases:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/defaults/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/meta/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/tasks/failures.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/tasks/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_server/tasks/tests.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_floating_ip/aliases:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_floating_ip/meta/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_floating_ip/tasks/floating_ip.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_floating_ip/tasks/main.yml:
+    migrated_to: ansible.cloudscale
+  test/integration/targets/cloudscale_floating_ip/tasks/unassigned.yml:
+    migrated_to: ansible.cloudscale
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
