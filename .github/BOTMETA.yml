@@ -930,6 +930,7 @@ files:
     labels: gitlab
     maintainers: $team_gitlab
     notified: jlozadad
+    migrated_to: ansible.gitlab
   $modules/storage/hpe3par/: farhan7500 gautamphegde
   $modules/storage/infinidat/: GR360RY vmalloc
   $modules/storage/netapp/:
@@ -2303,27 +2304,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/compat/unittest.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/compat/__init__.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/compat/builtins.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/procenv.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/__init__.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/path.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/loader.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/modules/utils.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/module_utils/conftest.py:
     migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
@@ -2789,7 +2790,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.fortios
+    migrated_to: ansible.gitlab
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -13322,6 +13323,80 @@ files:
     migrated_to: ansible.fortios
   test/integration/targets/fortios_address/tasks/test_params_state_present.yml:
     migrated_to: ansible.fortios
+  lib/ansible/plugins/inventory/gitlab_runners.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_user.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_runner.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_project_variable.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_project.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_hook.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_group.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/gitlab_deploy_key.py:
+    migrated_to: ansible.gitlab
+  lib/ansible/modules/source_control/gitlab/_gitlab_hooks.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_user.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/__init__.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/gitlab.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_runner.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_project.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_hook.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_group.py:
+    migrated_to: ansible.gitlab
+  test/units/modules/source_control/gitlab/test_gitlab_deploy_key.py:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_user/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_user/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_user/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_runner/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_runner/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_runner/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_project_variable/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_project_variable/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_project/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_project/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_project/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_hook/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_hook/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_hook/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_group/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_group/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_group/tasks/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_deploy_key/aliases:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_deploy_key/defaults/main.yml:
+    migrated_to: ansible.gitlab
+  test/integration/targets/gitlab_deploy_key/tasks/main.yml:
+    migrated_to: ansible.gitlab
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
