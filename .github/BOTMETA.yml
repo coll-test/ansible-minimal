@@ -1585,6 +1585,7 @@ files:
   $plugins/connection/buildah.py:
     support: community
     maintainers: TomasTomecek
+    migrated_to: ansible.containers
   $plugins/connection/docker.py:
     ignored: ThomasSteinbach cove
     labels: *id001
@@ -1601,6 +1602,7 @@ files:
     labels: k8s
   $plugins/connection/lxd.py:
     maintainers: mattclay
+    migrated_to: ansible.containers
   $plugins/connection/netconf.py:
     support: network
     maintainers: $team_networking
@@ -1618,6 +1620,7 @@ files:
   $plugins/connection/podman.py:
     support: community
     maintainers: TomasTomecek
+    migrated_to: ansible.containers
   $plugins/connection/psrp.py: *id031
   $plugins/connection/saltstack.py:
     support: community
@@ -10849,6 +10852,68 @@ files:
     migrated_to: ansible.cnos
   test/integration/targets/cnos_backup/vars/main.yml:
     migrated_to: ansible.cnos
+  lib/ansible/plugins/connection/lxc.py:
+    migrated_to: ansible.containers
+  lib/ansible/plugins/connection/libvirt_lxc.py:
+    migrated_to: ansible.containers
+  lib/ansible/plugins/connection/qubes.py:
+    migrated_to: ansible.containers
+  lib/ansible/plugins/connection/iocage.py:
+    migrated_to: ansible.containers
+  lib/ansible/module_utils/podman/common.py:
+    migrated_to: ansible.containers
+  lib/ansible/module_utils/podman/__init__.py:
+    migrated_to: ansible.containers
+  lib/ansible/module_utils/lxd.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/podman/podman_volume_info.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/podman/podman_image_info.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/podman/podman_image.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/podman/podman_container_info.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/lxd/lxd_profile.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/lxd/lxd_container.py:
+    migrated_to: ansible.containers
+  lib/ansible/modules/cloud/lxc/lxc_container.py:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_volume_info/aliases:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_volume_info/meta/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_volume_info/tasks/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/setup_podman/defaults/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/setup_podman/handlers/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/setup_podman/tasks/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/setup_podman/vars/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image_info/aliases:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image_info/meta/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image_info/tasks/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image/aliases:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image/files/Containerfile:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image/meta/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_image/tasks/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_container_info/aliases:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_container_info/meta/main.yml:
+    migrated_to: ansible.containers
+  test/integration/targets/podman_container_info/tasks/main.yml:
+    migrated_to: ansible.containers
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
