@@ -233,6 +233,7 @@ files:
     labels: crypto
     maintainers: $team_crypto
     supershipit: felixfontein
+    migrated_to: ansible.acme
   $modules/crypto/openssl_certificate.py:
     maintainers: ctrufan
   $modules/crypto/entrust/: ctrufan tylert
@@ -2243,29 +2244,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/compat/unittest.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/compat/__init__.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/compat/builtins.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/procenv.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/yaml_helper.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/__init__.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/path.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/loader.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/mock/vault_helper.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/modules/utils.py:
-    migrated_to: checkpoint.checkpoint
+    migrated_to: ansible.acme
   test/units/module_utils/conftest.py:
-    migrated_to: cisco.meraki
+    migrated_to: ansible.acme
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -6842,6 +6843,104 @@ files:
     migrated_to: ansible.a10
   lib/ansible/modules/network/a10/a10_server.py:
     migrated_to: ansible.a10
+  lib/ansible/modules/crypto/acme/acme_inspect.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/acme_challenge_cert_helper.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/acme_certificate_revoke.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/acme_certificate.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/acme_account_info.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/acme_account.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/_letsencrypt.py:
+    migrated_to: ansible.acme
+  lib/ansible/modules/crypto/acme/_acme_account_facts.py:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/privatekey_1.txt:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/cert_1.pem:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/csr_1.pem:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/csr_1.txt:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/csr_2.pem:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/csr_2.txt:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/fixtures/privatekey_1.pem:
+    migrated_to: ansible.acme
+  test/units/module_utils/acme/test_acme.py:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_inspect/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_inspect/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_inspect/tasks/impl.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_inspect/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_inspect/tests/validate.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/setup_acme/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/setup_acme/tasks/obtain-cert.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_challenge_cert_helper/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_challenge_cert_helper/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_challenge_cert_helper/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_challenge_cert_helper/tasks/obtain-cert.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/tasks/impl.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/tasks/obtain-cert.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate_revoke/tests/validate.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/tasks/impl.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/tasks/obtain-cert.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_certificate/tests/validate.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account_info/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account_info/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account_info/tasks/impl.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account_info/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account_info/tests/validate.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account/aliases:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account/meta/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account/tasks/impl.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account/tasks/main.yml:
+    migrated_to: ansible.acme
+  test/integration/targets/acme_account/tests/validate.yml:
+    migrated_to: ansible.acme
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
