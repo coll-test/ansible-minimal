@@ -2292,27 +2292,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/compat/unittest.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/compat/__init__.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/compat/builtins.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/procenv.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/__init__.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/path.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/loader.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/modules/utils.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/module_utils/conftest.py:
     migrated_to: ansible.avi
   test/units/module_utils/network/aci/test_aci.py:
@@ -2778,7 +2778,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.cloudstack
+    migrated_to: ansible.cnos
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -10335,6 +10335,520 @@ files:
     migrated_to: ansible.cloudscale
   test/integration/targets/cloudscale_floating_ip/tasks/unassigned.yml:
     migrated_to: ansible.cloudscale
+  lib/ansible/plugins/action/cnos.py:
+    migrated_to: ansible.cnos
+  lib/ansible/plugins/cliconf/cnos.py:
+    migrated_to: ansible.cnos
+  lib/ansible/plugins/doc_fragments/cnos.py:
+    migrated_to: ansible.cnos
+  lib/ansible/module_utils/network/cnos/cnos_errorcodes.py:
+    migrated_to: ansible.cnos
+  lib/ansible/module_utils/network/cnos/cnos_devicerules.py:
+    migrated_to: ansible.cnos
+  lib/ansible/module_utils/network/cnos/cnos.py:
+    migrated_to: ansible.cnos
+  lib/ansible/module_utils/network/cnos/__init__.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_vrf.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_vlan.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_vlag.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_user.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_template.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_system.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_static_route.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_showrun.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_save.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_rollback.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_reload.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_logging.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_lldp.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_linkagg.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_l3_interface.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_l2_interface.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_interface.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_image.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_facts.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_factory.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_config.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_conditional_template.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_conditional_command.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_command.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_bgp.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_banner.py:
+    migrated_to: ansible.cnos
+  lib/ansible/modules/network/cnos/cnos_backup.py:
+    migrated_to: ansible.cnos
+  lib/ansible/plugins/terminal/cnos.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_vrf.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/__init__.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/cnos_module.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_logging_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_user_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_mac-address:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_vlan:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_brief:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_running-config:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_config_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_ethernet_1_44_switchport:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_static_route.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_config_src.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_ip_interface_brief_vrf_all:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_ipv6_interface_brief_vrf_all:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_run_interface_ethernet_1_45:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_linkagg_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_vlan_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_system_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_bgp_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_ethernet_1_33_switchport:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_lldp_neighbors:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_vrf_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_run:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/l3_interface_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_version:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_ethernet_1_45_switchport:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_vlag_config.cfg:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_sys-info:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_process_memory:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/cnos_banner_show_banner.txt:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_run_interface_ethernet_1_33:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/fixtures/show_interface_status:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_vlan.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_vlag.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_user.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_system.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_static_route.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_logging.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_lldp.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_linkagg.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_l3_interface.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_l2_interface.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_interface.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_facts.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_config.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_command.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_bgp.py:
+    migrated_to: ansible.cnos
+  test/units/modules/network/cnos/test_cnos_banner.py:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/cnos_vrf_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vrf/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/cnos_vlan_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlan/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlag/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlag/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlag/cnos_vlag_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlag/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_vlag/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/cnos_user_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/tests/common/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_user/tests/common/sanity.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/cnos_template_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/templates/demo_template.j2:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_template/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/cnos_system_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/cli/net_system.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/cli/set_domain_list.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/cli/set_domain_name.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/cli/set_name_servers.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/common/sanity.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_system/tests/common/set_hostname.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/cnos_static_route_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_static_route/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_showrun/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_showrun/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_showrun/cnos_showrun_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_showrun/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_showrun/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_save/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_save/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_save/cnos_save_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_save/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_save/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_rollback/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_rollback/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_rollback/cnos_rollback_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_rollback/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_rollback/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/cnos_logging_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_logging/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/cnos_lldp_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_lldp/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/cnos_linkagg_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_linkagg/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/cnos_l3_interface_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l3_interface/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/cnos_l2_interface_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/tests/cli/agg.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/tests/cli/sanity.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_l2_interface/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/cnos_interface_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/tests/cli/intent.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_interface/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_image/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_image/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_image/cnos_image_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_image/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_image/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/cnos_facts_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tests/cli/all_facts.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tests/cli/default_facts.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tests/cli/invalid_subset.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_facts/tests/cli/not_hardware.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/cnos_config_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/templates/basic/config.j2:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/templates/basic/config1.j2:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/templates/defaults/config.j2:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/tests/cli/backup.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/tests/cli/basic.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_config/tests/cli/defaults.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/cnos_conditional_template_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/templates/demo_template.j2:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_template/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_command/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_command/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_command/cnos_conditional_command_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_command/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_conditional_command/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/cnos_command_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tests/cli/bad_operator.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tests/cli/contains.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tests/cli/invalid.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tests/cli/output.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_command/tests/cli/timeout.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_bgp/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_bgp/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_bgp/cnos_bgp_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_bgp/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_bgp/vars/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/cnos_banner_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/defaults/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/tasks/cli.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/tasks/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/tests/cli/basic-login.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/tests/cli/basic-motd.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/tests/cli/basic-no-login.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_banner/vars/main.yaml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_backup/README.md:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_backup/aliases:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_backup/cnos_backup_sample_hosts:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_backup/tasks/main.yml:
+    migrated_to: ansible.cnos
+  test/integration/targets/cnos_backup/vars/main.yml:
+    migrated_to: ansible.cnos
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
