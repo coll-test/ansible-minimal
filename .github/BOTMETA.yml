@@ -114,16 +114,19 @@ files:
     labels: *id001
     maintainers: $team_docker sluther
     supershipit: felixfontein
+    migrated_to: ansible.docker
   $modules/cloud/docker/docker_network.py:
     ignored: ThomasSteinbach cove
     labels: *id001
     maintainers: $team_docker olsaki
     supershipit: felixfontein
+    migrated_to: ansible.docker
   $modules/cloud/docker/docker_swarm_service.py:
     ignored: ThomasSteinbach cove
     labels: *id001
     maintainers: $team_docker hannseman
     supershipit: felixfontein
+    migrated_to: ansible.docker
   $modules/cloud/google/:
     supershipit: $team_google
     maintainers: $team_google
@@ -1594,6 +1597,7 @@ files:
     maintainers: $team_docker
     supershipit: felixfontein
     support: community
+    migrated_to: ansible.docker
   $plugins/connection/httpapi.py:
     support: network
     maintainers: $team_networking
@@ -1649,6 +1653,7 @@ files:
     maintainers: $team_docker
     supershipit: felixfontein
     support: community
+    migrated_to: ansible.docker
   $plugins/doc_fragments/gcp.py:
     support: community
     supershipit: $team_google
@@ -1705,6 +1710,7 @@ files:
     labels: *id001
     maintainers: $team_docker morph027
     supershipit: felixfontein
+    migrated_to: ansible.docker
   $plugins/inventory/foreman.py:
     maintainers: $team_foreman
   $plugins/inventory/gcp_compute.py:
@@ -2297,29 +2303,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/unittest.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/__init__.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/builtins.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/procenv.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/__init__.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/path.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/loader.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/modules/utils.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.avi
+    migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2783,7 +2789,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -8983,13 +8989,13 @@ files:
   test/integration/targets/elb_application_lb/tasks/test_multiple_actions_fail.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_remote_tmp_dir/handlers/main.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/default.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/main.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/windows.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/efs/aliases:
     migrated_to: ansible.amazon
   test/integration/targets/efs/runme.sh:
@@ -11004,6 +11010,382 @@ files:
     migrated_to: ansible.dimensiondata
   lib/ansible/modules/cloud/dimensiondata/dimensiondata_vlan.py:
     migrated_to: ansible.dimensiondata
+  lib/ansible/plugins/inventory/docker_machine.py:
+    migrated_to: ansible.docker
+  lib/ansible/module_utils/docker/swarm.py:
+    migrated_to: ansible.docker
+  lib/ansible/module_utils/docker/common.py:
+    migrated_to: ansible.docker
+  lib/ansible/module_utils/docker/__init__.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_volume_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_volume.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_swarm_service_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_swarm_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_swarm.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_stack.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_secret.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_prune.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_node_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_node.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_network_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_login.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_image_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_image.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_host_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_container_info.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_container.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/docker_config.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/_docker_service.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/_docker_image_facts.py:
+    migrated_to: ansible.docker
+  lib/ansible/modules/cloud/docker/_docker.py:
+    migrated_to: ansible.docker
+  test/units/module_utils/docker/test_common.py:
+    migrated_to: ansible.docker
+  test/units/modules/cloud/docker/test_docker_volume.py:
+    migrated_to: ansible.docker
+  test/units/modules/cloud/docker/__init__.py:
+    migrated_to: ansible.docker
+  test/units/modules/cloud/docker/test_docker_swarm_service.py:
+    migrated_to: ansible.docker
+  test/units/modules/cloud/docker/test_docker_network.py:
+    migrated_to: ansible.docker
+  test/units/modules/cloud/docker/test_docker_container.py:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/defaults/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/handlers/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/Debian.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/Fedora.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/RedHat-7.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/RedHat-8.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/Suse.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/Debian.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/Fedora.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/RedHat-7.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/RedHat-8.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/Suse.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/Ubuntu-14.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker/vars/default.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_remote_constraints/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_remote_constraints/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_remote_constraints/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_epel/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_volume/tasks/tests/basic.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service_info/tasks/test_docker_swarm_service_info.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/files/env-file-1:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/files/env-file-2:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/configs.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/logging.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/misc.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/mounts.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/networks.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/placement.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/resources.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/restart_config.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/rollback_config.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/secrets.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/tasks/tests/update_config.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_service/vars/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm_info/tasks/test_swarm_info.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/cleanup.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/tests/basic.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/tests/options-ca.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/tests/options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_swarm/tasks/tests/remote-addr-pool.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_openssl/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_openssl/vars/Debian.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_openssl/vars/FreeBSD.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_openssl/vars/RedHat.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_openssl/vars/Suse.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/files/stack_compose_base.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/files/stack_compose_overrides.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/tasks/test_stack.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_stack/vars/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_secret/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_secret/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_secret/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_secret/tasks/test_secrets.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_prune/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_prune/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_prune/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node_info/tasks/test_node_info.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_node/tasks/test_node.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/tests/basic.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/tests/ipam.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/tests/options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/tests/overlay.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_network/tasks/tests/substring.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/tasks/test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_login/tasks/tests/docker_login.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/files/nginx.conf:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/files/nginx.htpasswd:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/handlers/cleanup.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/handlers/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/setup_docker_registry/tasks/setup.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/files/Dockerfile:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/files/EtcHostsDockerfile:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/files/MyDockerfile:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/files/StagedDockerfile:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/tests/basic.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/tests/docker_image.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/tests/old-options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_image/tasks/tests/options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_host_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_host_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_host_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_host_info/tasks/test_host_info.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container_info/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container_info/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container_info/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/files/env-file:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/run-test.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/comparisons.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/image-ids.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/mounts-volumes.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/network.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/options.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/ports.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/regression-45700-dont-parse-on-absent.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_container/tasks/tests/start-stop.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_config/aliases:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_config/meta/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_config/tasks/main.yml:
+    migrated_to: ansible.docker
+  test/integration/targets/docker_config/tasks/test_docker_config.yml:
+    migrated_to: ansible.docker
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
