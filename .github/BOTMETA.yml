@@ -912,6 +912,7 @@ files:
     - remote_management
     - intersight
     maintainers: $team_intersight
+    migrated_to: ansible.intersight
   $modules/remote_management/ipmi/: cloudnull
   $modules/remote_management/lxca/: navalkp prabhosa
   $modules/remote_management/manageiq/: $team_manageiq
@@ -13971,6 +13972,22 @@ files:
     migrated_to: ansible.kubernetes
   test/integration/targets/k8s/tasks/waiter.yml:
     migrated_to: ansible.kubernetes
+  lib/ansible/module_utils/remote_management/intersight.py:
+    migrated_to: ansible.intersight
+  lib/ansible/modules/remote_management/intersight/intersight_rest_api.py:
+    migrated_to: ansible.intersight
+  lib/ansible/modules/remote_management/intersight/intersight_info.py:
+    migrated_to: ansible.intersight
+  lib/ansible/modules/remote_management/intersight/_intersight_facts.py:
+    migrated_to: ansible.intersight
+  test/integration/targets/intersight_rest_api/aliases:
+    migrated_to: ansible.intersight
+  test/integration/targets/intersight_rest_api/tasks/main.yml:
+    migrated_to: ansible.intersight
+  test/integration/targets/intersight_info/aliases:
+    migrated_to: ansible.intersight
+  test/integration/targets/intersight_info/tasks/main.yml:
+    migrated_to: ansible.intersight
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
