@@ -13988,6 +13988,20 @@ files:
     migrated_to: ansible.intersight
   test/integration/targets/intersight_info/tasks/main.yml:
     migrated_to: ansible.intersight
+  lib/ansible/plugins/doc_fragments/keycloak.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/module_utils/identity/keycloak/keycloak.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/module_utils/identity/keycloak/__init__.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/module_utils/identity/__init__.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/modules/identity/keycloak/keycloak_group.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/modules/identity/keycloak/keycloak_clienttemplate.py:
+    migrated_to: ansible.keycloak
+  lib/ansible/modules/identity/keycloak/keycloak_client.py:
+    migrated_to: ansible.keycloak
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
