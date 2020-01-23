@@ -2303,27 +2303,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/compat/unittest.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/compat/__init__.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/compat/builtins.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/procenv.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/__init__.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/path.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/loader.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/modules/utils.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/module_utils/conftest.py:
     migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
@@ -2789,7 +2789,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.enos
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -11394,6 +11394,120 @@ files:
     migrated_to: ansible.emc
   lib/ansible/modules/storage/emc/emc_vnx_sg_member.py:
     migrated_to: ansible.emc
+  lib/ansible/plugins/action/enos.py:
+    migrated_to: ansible.enos
+  lib/ansible/plugins/cliconf/enos.py:
+    migrated_to: ansible.enos
+  lib/ansible/plugins/doc_fragments/enos.py:
+    migrated_to: ansible.enos
+  lib/ansible/modules/network/enos/enos_facts.py:
+    migrated_to: ansible.enos
+  lib/ansible/modules/network/enos/enos_config.py:
+    migrated_to: ansible.enos
+  lib/ansible/modules/network/enos/enos_command.py:
+    migrated_to: ansible.enos
+  lib/ansible/module_utils/network/enos/enos.py:
+    migrated_to: ansible.enos
+  lib/ansible/module_utils/network/enos/__init__.py:
+    migrated_to: ansible.enos
+  lib/ansible/plugins/terminal/enos.py:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/test_enos_facts.py:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/__init__.py:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/enos_module.py:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_running-config:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_run:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_version:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_system_memory:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_lldp_remote-device_port:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_interface_ip:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/enos_config_src.cfg:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/enos_config_config.cfg:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_lldp_port:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/fixtures/show_interface_status:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/test_enos_config.py:
+    migrated_to: ansible.enos
+  test/units/modules/network/enos/test_enos_command.py:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/README.md:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/aliases:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/defaults/main.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tasks/cli.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tasks/main.yml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tests/cli/all_facts.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tests/cli/default_facts.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tests/cli/invalid_subset.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/tests/cli/not_hardware.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_facts/vars/main.yml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/README.md:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/aliases:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/defaults/main.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tasks/cli.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tasks/main.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/templates/basic/config.j2:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/templates/defaults/config.j2:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tests/cli/backup.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tests/cli/basic.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tests/cli/defaults.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/tests/cli/force.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_config/vars/main.yml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/README.md:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/aliases:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/defaults/main.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tasks/cli.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tasks/main.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tests/cli/bad_operator.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tests/cli/contains.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tests/cli/invalid.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tests/cli/output.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/tests/cli/timeout.yaml:
+    migrated_to: ansible.enos
+  test/integration/targets/enos_command/vars/main.yaml:
+    migrated_to: ansible.enos
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
