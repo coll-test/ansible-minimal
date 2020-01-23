@@ -14006,6 +14006,10 @@ files:
     migrated_to: ansible.layer2
   lib/ansible/modules/network/layer2/_net_l2_interface.py:
     migrated_to: ansible.layer2
+  lib/ansible/modules/network/layer3/_net_vrf.py:
+    migrated_to: ansible.layer3
+  lib/ansible/modules/network/layer3/_net_l3_interface.py:
+    migrated_to: ansible.layer3
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
