@@ -5913,6 +5913,10 @@ files:
     migrated_to: infinidat.infinity
   lib/ansible/modules/storage/infinidat/infini_export.py:
     migrated_to: infinidat.infinity
+  lib/ansible/plugins/callback/nrdp.py:
+    migrated_to: nagios.nagios
+  lib/ansible/modules/monitoring/nagios.py:
+    migrated_to: nagios.nagios
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
