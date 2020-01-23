@@ -1276,6 +1276,7 @@ files:
   $module_utils/pure.py:
     maintainers: $team_purestorage
     labels: pure_storage
+    migrated_to: purestorage.common
   $module_utils/redfish_utils.py:
     maintainers: $team_redfish
   $module_utils/remote_management/intersight: *id032
@@ -5917,6 +5918,8 @@ files:
     migrated_to: nagios.nagios
   lib/ansible/modules/monitoring/nagios.py:
     migrated_to: nagios.nagios
+  lib/ansible/plugins/doc_fragments/purestorage.py:
+    migrated_to: purestorage.common
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
