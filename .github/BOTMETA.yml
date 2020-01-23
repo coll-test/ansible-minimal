@@ -14002,6 +14002,10 @@ files:
     migrated_to: ansible.keycloak
   lib/ansible/modules/identity/keycloak/keycloak_client.py:
     migrated_to: ansible.keycloak
+  lib/ansible/modules/network/layer2/_net_vlan.py:
+    migrated_to: ansible.layer2
+  lib/ansible/modules/network/layer2/_net_l2_interface.py:
+    migrated_to: ansible.layer2
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
