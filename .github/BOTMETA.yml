@@ -11508,6 +11508,14 @@ files:
     migrated_to: ansible.enos
   test/integration/targets/enos_command/vars/main.yaml:
     migrated_to: ansible.enos
+  lib/ansible/plugins/doc_fragments/exoscale.py:
+    migrated_to: ansible.exoscale
+  lib/ansible/module_utils/exoscale.py:
+    migrated_to: ansible.exoscale
+  lib/ansible/modules/net_tools/exoscale/exo_dns_record.py:
+    migrated_to: ansible.exoscale
+  lib/ansible/modules/net_tools/exoscale/exo_dns_domain.py:
+    migrated_to: ansible.exoscale
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
