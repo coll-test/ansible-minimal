@@ -6971,6 +6971,16 @@ files:
     migrated_to: ansible.aireos
   test/units/modules/network/aireos/test_aireos_command.py:
     migrated_to: ansible.aireos
+  lib/ansible/plugins/doc_fragments/alicloud.py:
+    migrated_to: ansible.alicloud
+  lib/ansible/modules/cloud/alicloud/ali_instance_info.py:
+    migrated_to: ansible.alicloud
+  lib/ansible/modules/cloud/alicloud/ali_instance.py:
+    migrated_to: ansible.alicloud
+  lib/ansible/modules/cloud/alicloud/_ali_instance_facts.py:
+    migrated_to: ansible.alicloud
+  lib/ansible/module_utils/alicloud_ecs.py:
+    migrated_to: ansible.alicloud
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
