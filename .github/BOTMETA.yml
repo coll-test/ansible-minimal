@@ -99,7 +99,9 @@ files:
     - digital_ocean
     maintainers: $team_digital_ocean
     support: community
-  $modules/cloud/dimensiondata/dimensiondata_network.py: tintoy
+  $modules/cloud/dimensiondata/dimensiondata_network.py:
+    maintainers: tintoy
+    migrated_to: ansible.dimensiondata
   $modules/cloud/docker/: &id011
     ignored: ThomasSteinbach cove
     labels: &id001
@@ -10994,6 +10996,14 @@ files:
     migrated_to: ansible.digital_ocean
   test/integration/targets/digital_ocean_floating_ip/tasks/main.yml:
     migrated_to: ansible.digital_ocean
+  lib/ansible/plugins/doc_fragments/dimensiondata.py:
+    migrated_to: ansible.dimensiondata
+  lib/ansible/plugins/doc_fragments/dimensiondata_wait.py:
+    migrated_to: ansible.dimensiondata
+  lib/ansible/module_utils/dimensiondata.py:
+    migrated_to: ansible.dimensiondata
+  lib/ansible/modules/cloud/dimensiondata/dimensiondata_vlan.py:
+    migrated_to: ansible.dimensiondata
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
