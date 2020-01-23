@@ -2303,27 +2303,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/compat/unittest.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/compat/__init__.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/compat/builtins.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/procenv.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/__init__.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/path.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/loader.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/modules/utils.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/module_utils/conftest.py:
     migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
@@ -2789,7 +2789,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.enos
+    migrated_to: ansible.frr
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -11516,6 +11516,56 @@ files:
     migrated_to: ansible.exoscale
   lib/ansible/modules/net_tools/exoscale/exo_dns_domain.py:
     migrated_to: ansible.exoscale
+  lib/ansible/plugins/cliconf/frr.py:
+    migrated_to: ansible.frr
+  lib/ansible/modules/network/frr/frr_facts.py:
+    migrated_to: ansible.frr
+  lib/ansible/modules/network/frr/frr_bgp.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/bgp/process.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/bgp/neighbors.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/bgp/address_family.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/bgp/__init__.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/base.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/config/__init__.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/cli/__init__.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/providers.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/module.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/providers/__init__.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/frr.py:
+    migrated_to: ansible.frr
+  lib/ansible/module_utils/network/frr/__init__.py:
+    migrated_to: ansible.frr
+  lib/ansible/plugins/terminal/frr.py:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/test_frr_facts.py:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/__init__.py:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/fixtures/frr_facts_show_interface:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/fixtures/frr_bgp_config:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/fixtures/frr_facts_show_memory:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/fixtures/frr_facts_show_version:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/fixtures/__init__.py:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/frr_module.py:
+    migrated_to: ansible.frr
+  test/units/modules/network/frr/test_frr_bgp.py:
+    migrated_to: ansible.frr
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
