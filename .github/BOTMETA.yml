@@ -5883,6 +5883,20 @@ files:
     migrated_to: storage.hpe3par
   test/units/modules/storage/hpe3par/__init__.py:
     migrated_to: storage.hpe3par
+  lib/ansible/plugins/doc_fragments/ibm_storage.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_vol_map.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_vol.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_pool.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_host_ports.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_host.py:
+    migrated_to: storage.ibm
+  lib/ansible/modules/storage/ibm/ibm_sa_domain.py:
+    migrated_to: storage.ibm
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
