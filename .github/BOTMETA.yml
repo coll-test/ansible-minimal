@@ -5897,6 +5897,22 @@ files:
     migrated_to: storage.ibm
   lib/ansible/modules/storage/ibm/ibm_sa_domain.py:
     migrated_to: storage.ibm
+  lib/ansible/plugins/doc_fragments/infinibox.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/module_utils/infinibox.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_vol.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_pool.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_host.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_fs.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_export_client.py:
+    migrated_to: infinidat.infinity
+  lib/ansible/modules/storage/infinidat/infini_export.py:
+    migrated_to: infinidat.infinity
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
