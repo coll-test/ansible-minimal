@@ -11386,6 +11386,14 @@ files:
     migrated_to: ansible.docker
   test/integration/targets/docker_config/tasks/test_docker_config.yml:
     migrated_to: ansible.docker
+  lib/ansible/plugins/doc_fragments/emc.py:
+    migrated_to: ansible.emc
+  lib/ansible/module_utils/storage/emc/emc_vnx.py:
+    migrated_to: ansible.emc
+  lib/ansible/module_utils/storage/emc/__init__.py:
+    migrated_to: ansible.emc
+  lib/ansible/modules/storage/emc/emc_vnx_sg_member.py:
+    migrated_to: ansible.emc
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
