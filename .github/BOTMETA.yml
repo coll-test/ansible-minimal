@@ -2398,29 +2398,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/compat/unittest.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/compat/__init__.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/compat/builtins.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/procenv.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/__init__.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/path.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/loader.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/modules/utils.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2884,7 +2884,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: ansible.netcommon
   test/units/modules/conftest.py:
-    migrated_to: ansible.netcommon
+    migrated_to: ansible.nso
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -18969,6 +18969,64 @@ files:
     migrated_to: ansible.netcommon
   test/units/plugins/terminal/test_slxos.py:
     migrated_to: ansible.netcommon
+  lib/ansible/plugins/doc_fragments/nso.py:
+    migrated_to: ansible.nso
+  lib/ansible/modules/network/nso/nso_verify.py:
+    migrated_to: ansible.nso
+  lib/ansible/modules/network/nso/nso_show.py:
+    migrated_to: ansible.nso
+  lib/ansible/modules/network/nso/nso_query.py:
+    migrated_to: ansible.nso
+  lib/ansible/modules/network/nso/nso_config.py:
+    migrated_to: ansible.nso
+  lib/ansible/modules/network/nso/nso_action.py:
+    migrated_to: ansible.nso
+  lib/ansible/module_utils/network/nso/nso.py:
+    migrated_to: ansible.nso
+  lib/ansible/module_utils/network/nso/__init__.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/test_nso_verify.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/__init__.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/complex_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/config_empty_data.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/device_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/l3vpn_l3vpn_endpoint_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/l3vpn_l3vpn_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/sync_from_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/config_config_changes.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/description_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/verify_violation_data.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/config_config.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/devices_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/fixtures/l3vpn_schema.json:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/nso_module.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/test_nso_show.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/test_nso_query.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/test_nso_config.py:
+    migrated_to: ansible.nso
+  test/units/modules/network/nso/test_nso_action.py:
+    migrated_to: ansible.nso
+  test/units/module_utils/network/nso/test_nso.py:
+    migrated_to: ansible.nso
+  test/units/module_utils/network/nso/__init__.py:
+    migrated_to: ansible.nso
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
