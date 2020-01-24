@@ -2426,29 +2426,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/compat/unittest.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/compat/__init__.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/compat/builtins.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/procenv.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/__init__.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/path.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/loader.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/modules/utils.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.kubernetes
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2912,7 +2912,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.ironware
+    migrated_to: ansible.kubernetes
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -9112,13 +9112,13 @@ files:
   test/integration/targets/elb_application_lb/tasks/test_multiple_actions_fail.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_remote_tmp_dir/handlers/main.yml:
-    migrated_to: ansible.docker
+    migrated_to: ansible.kubernetes
   test/integration/targets/setup_remote_tmp_dir/tasks/default.yml:
-    migrated_to: ansible.docker
+    migrated_to: ansible.kubernetes
   test/integration/targets/setup_remote_tmp_dir/tasks/main.yml:
-    migrated_to: ansible.docker
+    migrated_to: ansible.kubernetes
   test/integration/targets/setup_remote_tmp_dir/tasks/windows.yml:
-    migrated_to: ansible.docker
+    migrated_to: ansible.kubernetes
   test/integration/targets/efs/aliases:
     migrated_to: ansible.amazon
   test/integration/targets/efs/runme.sh:
