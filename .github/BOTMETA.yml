@@ -26275,6 +26275,32 @@ files:
     migrated_to: ansible.vmware_soap
   test/integration/targets/vcenter_folder/tasks/main.yml:
     migrated_to: ansible.vmware_soap
+  lib/ansible/plugins/doc_fragments/vmware_rest_client.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/plugins/doc_fragments/VmwareRestModule.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/plugins/doc_fragments/VmwareRestModule_filters.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/plugins/doc_fragments/VmwareRestModule_full.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/plugins/doc_fragments/VmwareRestModule_state.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/module_utils/vmware_httpapi/__init__.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/module_utils/vmware_httpapi/VmwareRestModule.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/module_utils/vmware_rest_client.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/modules/cloud/vmware_httpapi/vmware_core_info.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/modules/cloud/vmware_httpapi/vmware_cis_category_info.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/modules/cloud/vmware_httpapi/vmware_appliance_health_info.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/modules/cloud/vmware_httpapi/vmware_appliance_access_info.py:
+    migrated_to: ansible.vmware_rest
+  lib/ansible/plugins/httpapi/vmware.py:
+    migrated_to: ansible.vmware_rest
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
