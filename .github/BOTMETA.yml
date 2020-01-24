@@ -2399,27 +2399,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/compat/unittest.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/compat/__init__.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/compat/builtins.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/procenv.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/yaml_helper.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/__init__.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/path.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/loader.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/mock/vault_helper.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/modules/utils.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2885,7 +2885,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: vyatta.vyos
+    migrated_to: checkpoint.checkpoint
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -6795,7 +6795,7 @@ files:
   test/units/plugins/httpapi/test_checkpoint.py:
     migrated_to: checkpoint.checkpoint
   test/units/plugins/httpapi/__init__.py:
-    migrated_to: ansible.netcommon
+    migrated_to: checkpoint.checkpoint
   test/units/modules/network/check_point/test_cp_mgmt_wildcard_facts.py:
     migrated_to: checkpoint.checkpoint
   test/units/modules/network/check_point/__init__.py:
