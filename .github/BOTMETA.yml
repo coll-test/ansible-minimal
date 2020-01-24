@@ -20850,6 +20850,32 @@ files:
     migrated_to: azure.azcollection
   test/integration/targets/azure_rm_acs/tasks/main.yml:
     migrated_to: azure.azcollection
+  lib/ansible/plugins/doc_fragments/influxdb.py:
+    migrated_to: database.influxdb
+  lib/ansible/module_utils/influxdb.py:
+    migrated_to: database.influxdb
+  lib/ansible/modules/database/influxdb/influxdb_write.py:
+    migrated_to: database.influxdb
+  lib/ansible/modules/database/influxdb/influxdb_user.py:
+    migrated_to: database.influxdb
+  lib/ansible/modules/database/influxdb/influxdb_retention_policy.py:
+    migrated_to: database.influxdb
+  lib/ansible/modules/database/influxdb/influxdb_query.py:
+    migrated_to: database.influxdb
+  lib/ansible/modules/database/influxdb/influxdb_database.py:
+    migrated_to: database.influxdb
+  test/integration/targets/influxdb_user/aliases:
+    migrated_to: database.influxdb
+  test/integration/targets/influxdb_user/meta/main.yml:
+    migrated_to: database.influxdb
+  test/integration/targets/influxdb_user/tasks/main.yml:
+    migrated_to: database.influxdb
+  test/integration/targets/influxdb_user/tasks/tests.yml:
+    migrated_to: database.influxdb
+  test/integration/targets/setup_influxdb/tasks/main.yml:
+    migrated_to: database.influxdb
+  test/integration/targets/setup_influxdb/tasks/setup.yml:
+    migrated_to: database.influxdb
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
