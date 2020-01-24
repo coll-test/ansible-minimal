@@ -2424,27 +2424,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/compat/unittest.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/compat/__init__.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/compat/builtins.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/procenv.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/yaml_helper.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/__init__.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/path.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/loader.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/mock/vault_helper.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/modules/utils.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/module_utils/conftest.py:
     migrated_to: netapp.common
   test/units/module_utils/network/aci/test_aci.py:
@@ -2910,7 +2910,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -24638,7 +24638,7 @@ files:
   test/units/modules/storage/netapp/test_na_ontap_vserver_cifs_security.py:
     migrated_to: netapp.ontap
   test/units/modules/storage/netapp/__init__.py:
-    migrated_to: netapp.ontap
+    migrated_to: netapp.elementsw
   test/units/modules/storage/netapp/test_na_ontap_vscan_scanner_pool.py:
     migrated_to: netapp.ontap
   test/units/modules/storage/netapp/test_na_ontap_vscan_on_demand_task.py:
@@ -24753,6 +24753,56 @@ files:
     migrated_to: netapp.ontap
   test/units/modules/storage/netapp/test_na_ontap_aggregate.py:
     migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_elementsw_volume_pair.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_volume_clone.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_volume.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_vlan.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_snapshot_schedule.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_snapshot_restore.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_snapshot.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_node.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_network_interfaces.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_ldap.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_initiators.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_drive.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_cluster_snmp.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_cluster_pair.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_cluster_config.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_cluster.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_check_connections.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_backup.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_admin_users.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_account.py:
+    migrated_to: netapp.elementsw
+  lib/ansible/modules/storage/netapp/na_elementsw_access_group.py:
+    migrated_to: netapp.elementsw
+  test/units/modules/storage/netapp/test_na_elementsw_initiators.py:
+    migrated_to: netapp.elementsw
+  test/units/modules/storage/netapp/test_na_elementsw_cluster_snmp.py:
+    migrated_to: netapp.elementsw
+  test/units/modules/storage/netapp/test_na_elementsw_cluster_config.py:
+    migrated_to: netapp.elementsw
+  test/units/modules/storage/netapp/test_na_elementsw_access_group.py:
+    migrated_to: netapp.elementsw
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
