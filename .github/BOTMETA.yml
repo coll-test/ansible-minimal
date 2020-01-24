@@ -1622,6 +1622,7 @@ files:
     migrated_to: ansible.netcommon
   $plugins/cliconf/exos.py:
     maintainers: rdvencioneck $team_extreme
+    migrated_to: extremenetworks.exos
   $plugins/cliconf/ios.py:
     labels: *id023
     maintainers: $team_networking $team_ios
@@ -1777,6 +1778,7 @@ files:
   $plugins/httpapi/ftd.py: *id022
   $plugins/httpapi/exos.py:
     maintainers: $team_extreme
+    migrated_to: extremenetworks.exos
   $plugins/inventory/__init__.py:
     support: core
   $plugins/inventory/aws_ec2.py:
@@ -1977,6 +1979,7 @@ files:
     migrated_to: ansible.netcommon
   $plugins/terminal/exos.py:
     maintainers: rdvencioneck $team_extreme
+    migrated_to: extremenetworks.exos
   $plugins/terminal/ios.py:
     labels: *id023
     maintainers: $team_networking $team_ios
@@ -2405,27 +2408,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/compat/unittest.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/compat/__init__.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/compat/builtins.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/procenv.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/yaml_helper.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/__init__.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/path.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/loader.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/mock/vault_helper.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/modules/utils.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2891,7 +2894,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: dell.os10
+    migrated_to: extremenetworks.exos
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -21162,6 +21165,260 @@ files:
     migrated_to: dell.os10
   test/integration/targets/dellos10_command/tests/cli/timeout.yaml:
     migrated_to: dell.os10
+  lib/ansible/plugins/action/exos.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/vlans/vlans.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/vlans/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/lldp_interfaces/lldp_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/lldp_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/lldp_global/lldp_global.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/lldp_global/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/legacy/base.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/legacy/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/l2_interfaces/l2_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/l2_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/vlans/vlans.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/vlans/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/lldp_interfaces/lldp_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/lldp_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/lldp_global/lldp_global.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/lldp_global/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/l2_interfaces/l2_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/l2_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/vlans/vlans.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/vlans/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/lldp_interfaces/lldp_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/lldp_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/lldp_global/lldp_global.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/lldp_global/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/l2_interfaces/l2_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/l2_interfaces/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/facts/facts.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/facts/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/utils/utils.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/utils/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/facts.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/facts/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/config/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/argspec/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/exos.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/module_utils/network/exos/__init__.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_vlans.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_lldp_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_lldp_global.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_l2_interfaces.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_facts.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_config.py:
+    migrated_to: extremenetworks.exos
+  lib/ansible/modules/network/exos/exos_command.py:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/test_exos_facts.py:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/__init__.py:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/exos_module.py:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/exos_config_config.cfg:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/exos_config_modified.cfg:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_memory:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_switch:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_port_config:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_version:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_vlan_detail:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/exos_config_src.cfg:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_port_description:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_lldp_neighbors:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/fixtures/show_vlan:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/test_exos_config.py:
+    migrated_to: extremenetworks.exos
+  test/units/modules/network/exos/test_exos_command.py:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/_populate_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/_reset_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/deleted.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/merged.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/overridden.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/tests/httpapi/replaced.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_vlans/vars/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/_populate_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/_reset_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/deleted.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/merged.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/overridden.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/tests/httpapi/replaced.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_interfaces/vars/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/meta/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tests/httpapi/_populate_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tests/httpapi/_reset_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tests/httpapi/deleted.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tests/httpapi/merged.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/tests/httpapi/replaced.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_lldp_global/vars/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/_populate_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/_reset_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/deleted.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/merged.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/overridden.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/tests/httpapi/replaced.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_l2_interfaces/vars/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tasks/cli.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tests/common/basic.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tests/common/default_facts.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tests/common/invalid_subset.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_facts/tests/common/not_hardware_facts.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tasks/cli.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/templates/master.cfg:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tests/common/backup.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tests/common/diff_against_file.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tests/common/diff_against_startup.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tests/common/save_config.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_config/tests/common/sysname.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/defaults/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tasks/cli.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tasks/httpapi.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tasks/main.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tests/common/multiple.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tests/common/prompt.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tests/common/single.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tests/common/waitfor.yaml:
+    migrated_to: extremenetworks.exos
+  test/integration/targets/exos_command/tests/common/waitfor_multiple.yaml:
+    migrated_to: extremenetworks.exos
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
