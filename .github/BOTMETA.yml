@@ -2399,27 +2399,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/compat/unittest.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/compat/__init__.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/compat/builtins.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/procenv.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/yaml_helper.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/__init__.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/path.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/loader.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/mock/vault_helper.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/modules/utils.py:
-    migrated_to: cisco.aci
+    migrated_to: cisco.ios
   test/units/module_utils/conftest.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/test_aci.py:
@@ -2867,25 +2867,25 @@ files:
   test/units/plugins/cliconf/test_ios.py:
     migrated_to: cisco.ios
   test/units/plugins/cliconf/__init__.py:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/slxos/show_version:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/slxos/show_chassis:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/slxos/show_startup-config:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/ios/show_version:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/slxos/show_running-config:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/nos/show_chassis:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/nos/show_running-config:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/plugins/cliconf/fixtures/nos/show_version:
-    migrated_to: ansible.netcommon
+    migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.ovs
+    migrated_to: cisco.ios
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
