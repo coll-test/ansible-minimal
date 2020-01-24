@@ -233,7 +233,7 @@ files:
     - zpool
     labels: solaris
     maintainers: $team_solaris
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   $modules/cloud/univention/: keachi
   $modules/cloud/vmware/: &id035
     ignored: cigamit jcpowermac mtnbikenc tchernomax ckotte
@@ -322,7 +322,10 @@ files:
   $modules/files/acl.py:
     ignored: astorije
     maintainers: $team_ansible
-  $modules/files/assemble.py: $team_ansible
+    migrated_to: ansible.unix
+  $modules/files/assemble.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
   $modules/files/copy.py: $team_ansible ptux
   $modules/files/fetch.py: $team_ansible
   $modules/files/file.py: $team_ansible
@@ -330,13 +333,18 @@ files:
   $modules/files/lineinfile.py: $team_ansible samdoran
   $modules/files/stat.py:
     ignored: bpennypacker
-  $modules/files/synchronize.py: $team_ansible
+  $modules/files/synchronize.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
   $modules/files/template.py: $team_ansible
   $modules/files/unarchive.py:
     ignored: dagwieers
     labels: m:unarchive
     maintainers: pileofrogs
-  $modules/files/xattr.py: $team_ansible
+    migrated_to: ansible.unix
+  $modules/files/xattr.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
   $modules/files/xml.py:
     ignored: magnus919
     labels: m:xml
@@ -840,7 +848,9 @@ files:
   $modules/network/system/: $team_networking
   $modules/network/voss/: $team_extreme
   $modules/network/vyos/: Qalthos NilashishC
-  $modules/notification/_osx_say.py: $team_ansible
+  $modules/notification/_osx_say.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
   $modules/notification/rocketchat.py:
     ignored: ramondelafuente
     maintainers: Deepakkothandan
@@ -879,6 +889,7 @@ files:
     - pfsense
     labels: bsd
     maintainers: $team_bsd
+    migrated_to: ansible.unix
   $modules/packaging/os/homebrew.py: &id006
     ignored: frenck
     keywords:
@@ -892,6 +903,7 @@ files:
     labels: macos
     maintainers: $team_macos
     notified: chris-short
+    migrated_to: ansible.unix
   $modules/packaging/os/homebrew_: *id006
   $modules/packaging/os/installp.py: &id008
     keywords:
@@ -901,35 +913,49 @@ files:
     - wpar
     labels: aix
     maintainers: $team_aix
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   $modules/packaging/os/macports.py: *id006
   $modules/packaging/os/package.py: $team_ansible
   $modules/packaging/os/pacman.py:
     ignored: elasticdog
+    migrated_to: ansible.unix
   $modules/packaging/os/pkg5: *id005
   $modules/packaging/os/pkgin.py: *id005
   $modules/packaging/os/pkgng.py: *id007
   $modules/packaging/os/pkgutil.py: *id005
   $modules/packaging/os/portage.py:
     ignored: sayap
+    migrated_to: ansible.unix
   $modules/packaging/os/portinstall.py: *id007
-  $modules/packaging/os/redhat_subscription.py: alikins kahowell
-  $modules/packaging/os/rhn_channel.py: alikins
-  $modules/packaging/os/rhn_register.py: $team_rhn
-  $modules/packaging/os/snap.py: angristan
+  $modules/packaging/os/redhat_subscription.py:
+    maintainers: alikins kahowell
+    migrated_to: ansible.unix
+  $modules/packaging/os/rhn_channel.py:
+    maintainers: alikins
+    migrated_to: ansible.unix
+  $modules/packaging/os/rhn_register.py:
+    maintainers: $team_rhn
+    migrated_to: ansible.unix
+  $modules/packaging/os/snap.py:
+    maintainers: angristan
+    migrated_to: ansible.unix
   $modules/packaging/os/svr4pkg.py: *id005
   $modules/packaging/os/swdepot.py: &id014
     keywords:
     - hp-ux
     labels: hpux
     maintainers: $team_hpux
-  $modules/packaging/os/swupd.py: hnanni
+    migrated_to: ansible.unix
+  $modules/packaging/os/swupd.py:
+    maintainers: hnanni
+    migrated_to: ansible.unix
   $modules/packaging/os/yum.py:
     maintainers: $team_ansible kustodian
     ignored: skvidal
   $modules/packaging/os/zypper.py:
     maintainers: $team_suse
     ignored: dirtyharrycallahan robinro
+    migrated_to: ansible.unix
   $modules/remote_management/foreman/: $team_foreman
   $modules/remote_management/hpilo/:
     ignored: dagwieers
@@ -986,14 +1012,23 @@ files:
   $modules/system/aix: *id008
   $modules/system/alternatives.py:
     ignored: DavidWittman
-  $modules/system/at.py: $team_ansible
-  $modules/system/authorized_key.py: $team_ansible
+    migrated_to: ansible.unix
+  $modules/system/at.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
+  $modules/system/authorized_key.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
   $modules/system/beadm.py: *id005
   $modules/system/facter.py:
     maintainers: $team_ansible
     migrated_to: ansible.misc
-  $modules/system/filesystem.py: pilou-
-  $modules/system/gconftool2.py: Akasurde
+  $modules/system/filesystem.py:
+    maintainers: pilou-
+    migrated_to: ansible.unix
+  $modules/system/gconftool2.py:
+    maintainers: Akasurde
+    migrated_to: ansible.unix
   $modules/system/group.py: $team_ansible
   $modules/system/interfaces_file.py:
     maintainers: obourdon
@@ -1001,9 +1036,11 @@ files:
   $modules/system/mksysb.py: *id008
   $modules/system/modprobe.py:
     ignored: stygstra
+    migrated_to: ansible.unix
   $modules/system/mount.py:
     maintainers: $team_ansible jtyr
     ignored: skvidal
+    migrated_to: ansible.unix
   $modules/system/ohai.py:
     maintainers: $team_ansible
     migrated_to: ansible.misc
@@ -1011,20 +1048,28 @@ files:
   $modules/system/pam_limits.py:
     ignored: usawa
     maintainers: giovannisciortino
+    migrated_to: ansible.unix
   $modules/system/ping.py: $team_ansible
   $modules/system/puppet.py:
     maintainers: nibalizer
     migrated_to: ansible.misc
-  $modules/system/seboolean.py: $team_ansible
-  $modules/system/selinux.py: samdoran
+  $modules/system/seboolean.py:
+    maintainers: $team_ansible
+    migrated_to: ansible.unix
+  $modules/system/selinux.py:
+    maintainers: samdoran
+    migrated_to: ansible.unix
   $modules/system/service.py: $team_ansible
   $modules/system/setup.py:
     maintainers: $team_ansible
   $modules/system/solaris: *id005
-  $modules/system/sysctl.py: Akasurde
+  $modules/system/sysctl.py:
+    maintainers: Akasurde
+    migrated_to: ansible.unix
   $modules/system/systemd.py: $team_ansible
   $modules/system/ufw.py:
     notified: felixfontein
+    migrated_to: ansible.unix
   $modules/system/user.py: $team_ansible samdoran
   $modules/utilities/helper/meta.py: $team_ansible
   $modules/utilities/logic/assert.py: $team_ansible
@@ -1186,6 +1231,7 @@ files:
     support: core
   $module_utils/ismount.py:
     support: core
+    migrated_to: ansible.unix
   $module_utils/json_utils.py:
     support: core
   $module_utils/pycompat24.py:
@@ -1444,6 +1490,7 @@ files:
     support: core
   $plugins/action/assemble.py:
     support: core
+    migrated_to: ansible.unix
   $plugins/action/assert.py:
     support: core
   $plugins/action/aws_s3.py:
@@ -1491,6 +1538,7 @@ files:
     support: core
   $plugins/action/synchronize.py:
     support: core
+    migrated_to: ansible.unix
   $plugins/action/telnet.py:
     support: core
     migrated_to: ansible.netcommon
@@ -1606,6 +1654,7 @@ files:
     support: core
   $plugins/callback/unixy.py:
     maintainers: akatch
+    migrated_to: ansible.unix
   $plugins/cliconf/:
     labels: networking
   $plugins/cliconf/aruba.py:
@@ -2426,27 +2475,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/compat/unittest.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/compat/__init__.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/compat/builtins.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/procenv.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/__init__.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/path.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/loader.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/modules/utils.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/module_utils/conftest.py:
     migrated_to: ansible.nso
   test/units/module_utils/network/aci/test_aci.py:
@@ -2912,7 +2961,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: ansible.netcommon
   test/units/modules/conftest.py:
-    migrated_to: ansible.ovs
+    migrated_to: ansible.unix
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -8806,7 +8855,7 @@ files:
   test/integration/targets/sts_assume_role/templates/policy.json.j2:
     migrated_to: ansible.amazon
   test/integration/targets/prepare_tests/tasks/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/setup_ec2/defaults/main.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_ec2/tasks/common.yml:
@@ -9112,13 +9161,13 @@ files:
   test/integration/targets/elb_application_lb/tasks/test_multiple_actions_fail.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_remote_tmp_dir/handlers/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/setup_remote_tmp_dir/tasks/default.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/setup_remote_tmp_dir/tasks/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/setup_remote_tmp_dir/tasks/windows.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/efs/aliases:
     migrated_to: ansible.amazon
   test/integration/targets/efs/runme.sh:
@@ -11242,7 +11291,7 @@ files:
   test/integration/targets/setup_remote_constraints/tasks/main.yml:
     migrated_to: ansible.docker
   test/integration/targets/setup_epel/tasks/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/integration/targets/docker_volume/aliases:
     migrated_to: ansible.docker
   test/integration/targets/docker_volume/meta/main.yml:
@@ -13592,43 +13641,43 @@ files:
   test/units/modules/net_tools/test_hetzner_firewall_info.py:
     migrated_to: ansible.hetzner
   test/units/modules/net_tools/__init__.py:
-    migrated_to: ansible.hetzner
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_dns_view.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_network_view.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_srv_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/fixtures/nios_result.txt:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_ptr_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_module.py:
-    migrated_to: ansible.hetzner
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_cname_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_fixed_address.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_mx_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_zone.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_naptr_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/__init__.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_nsgroup.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_host_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_member.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_network.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_a_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/nios/test_nios_aaaa_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.unix
   test/units/modules/net_tools/test_hetzner_firewall.py:
     migrated_to: ansible.hetzner
   test/integration/targets/hcloud_volume_info/aliases:
@@ -16626,247 +16675,247 @@ files:
   test/units/modules/remote_management/lxca/test_lxca_nodes.py:
     migrated_to: ansible.misc
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_revert.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family.test_no_changes:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family.test_no_changes.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_and_delete_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_and_delete_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_add_and_delete_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv4_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_ipv6_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_method:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_method.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_change_method.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_revert:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_revert.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_revert.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_and_eth0_mtu:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_and_eth0_mtu.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_and_eth0_mtu.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_slaves:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_slaves.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/address_family_set_aggi_slaves.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp.test_no_changes:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp.test_no_changes.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_and_delete_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_and_delete_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_add_and_delete_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv4_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_ipv6_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_method:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_method.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_change_method.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_revert:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_revert.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_and_eth0_mtu:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_and_eth0_mtu.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_and_eth0_mtu.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_slaves:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_slaves.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/default_dhcp_set_aggi_slaves.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com.test_no_changes:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com.test_no_changes.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_and_delete_aggi_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_and_delete_aggi_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_add_and_delete_aggi_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv4_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_post_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_post_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_post_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_pre_up:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_pre_up.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_ipv6_pre_up.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_method:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_method.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_change_method.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_revert:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_revert.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_revert.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_and_eth0_mtu:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_and_eth0_mtu.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_and_eth0_mtu.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_slaves:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_slaves.exceptions.txt:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/golden_output/servers.com_set_aggi_slaves.json:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/input/address_family:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/input/default_dhcp:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/fixtures/input/servers.com:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/test_interfaces_file.py:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/interfaces_file/__init__.py:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/test_java_keystore.py:
     migrated_to: ansible.misc
   test/units/modules/system/__init__.py:
-    migrated_to: ansible.misc
+    migrated_to: ansible.unix
   test/units/modules/system/test_pamd.py:
     migrated_to: ansible.misc
   test/units/modules/system/test_parted.py:
@@ -24819,6 +24868,506 @@ files:
     migrated_to: nokia.sros
   lib/ansible/module_utils/network/sros/__init__.py:
     migrated_to: nokia.sros
+  lib/ansible/plugins/action/unarchive.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/become/doas.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/become/ksu.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/become/machinectl.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/become/pfexec.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/callback/mail.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/callback/osx_say.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/callback/syslog_json.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/connection/chroot.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/connection/jail.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/connection/zone.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/lookup/dig.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/lookup/dnstxt.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/lookup/keyring.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/lookup/shelvefile.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/aix_lvol.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/aix_lvg.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/aix_inittab.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/aix_filesystem.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/aix_devices.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/files/tempfile.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/net_tools/nmcli.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/notification/say.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/flatpak.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/flatpak_remote.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/homebrew_cask.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/homebrew_tap.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/layman.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/opkg.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/pkg5.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/pkg5_publisher.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/pulp_repo.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/rhsm_release.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/rhsm_repository.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/slackpkg.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/sorcery.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/urpmi.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/xbps.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/packaging/os/zypper_repository.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/capabilities.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/cron.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/cronvar.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/firewalld.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/lbu.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/locale_gen.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/lvg.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/lvol.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/openwrt_init.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/runit.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/svc.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/seport.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/solaris_zone.py:
+    migrated_to: ansible.unix
+  lib/ansible/modules/system/xfs_quota.py:
+    migrated_to: ansible.unix
+  lib/ansible/module_utils/firewalld.py:
+    migrated_to: ansible.unix
+  lib/ansible/module_utils/redhat.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/shell/csh.py:
+    migrated_to: ansible.unix
+  lib/ansible/plugins/shell/fish.py:
+    migrated_to: ansible.unix
+  test/units/plugins/action/test_synchronize.py:
+    migrated_to: ansible.unix
+  test/units/plugins/action/__init__.py:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become_cli/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic/taskvars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote_su/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote_su/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_become_cli/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become_cli/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_sudo/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_sudo/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote_su/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote_su/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_become_cli/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_become_cli/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_sudo/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/delegate_remote/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become_cli/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become_cli/task_vars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic/taskvars_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_sudo/task_args_out.json:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_become/meta.yaml:
+    migrated_to: ansible.unix
+  test/units/plugins/action/fixtures/synchronize/basic_vagrant_become_cli/task_vars_in.json:
+    migrated_to: ansible.unix
+  test/units/modules/net_tools/test_nmcli.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/conftest.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/test_redhat_subscription.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/__init__.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/test_rhn_channel.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/test_rhn_register.py:
+    migrated_to: ansible.unix
+  test/units/modules/packaging/os/test_rhsm_release.py:
+    migrated_to: ansible.unix
+  test/units/modules/system/test_ufw.py:
+    migrated_to: ansible.unix
+  test/integration/targets/aix_filesystem/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/aix_filesystem/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/aix_devices/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/aix_devices/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/acl/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/acl/tasks/acl.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/acl/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/files/fragment1:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/files/fragment2:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/files/fragment3:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/files/fragment4:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/files/fragment5:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/assemble/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/unarchive/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/unarchive/files/foo.txt:
+    migrated_to: ansible.unix
+  test/integration/targets/unarchive/files/test-unarchive-nonascii-くらとみ.tar.gz:
+    migrated_to: ansible.unix
+  test/integration/targets/unarchive/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/unarchive/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xattr/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/xattr/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xattr/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xattr/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xattr/tasks/test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/synchronize/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/synchronize/files/bar.txt:
+    migrated_to: ansible.unix
+  test/integration/targets/synchronize/files/foo.txt:
+    migrated_to: ansible.unix
+  test/integration/targets/synchronize/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/synchronize/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/tasks/check_mode.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak/tasks/test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/tasks/check_mode.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/flatpak_remote/tasks/test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_flatpak_remote/README.md:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_flatpak_remote/files/repo.tar.xz:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_flatpak_remote/handlers/main.yaml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_flatpak_remote/meta/main.yaml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_flatpak_remote/tasks/main.yaml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper/files/empty.spec:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper/tasks/zypper.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper_repository/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper_repository/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper_repository/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper_repository/tasks/test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/zypper_repository/tasks/zypper_repository.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/path_is_checked.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/remove_links.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/setup_test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/tests.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/tasks/tests_set_priority.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/templates/dummy_alternative:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/templates/dummy_command:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/vars/Debian.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/vars/Suse-42.3.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/alternatives/vars/default.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/at/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/at/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/at/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/authorized_key/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/authorized_key/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/authorized_key/files/existing_authorized_keys:
+    migrated_to: ansible.unix
+  test/integration/targets/authorized_key/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/authorized_key/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cron/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/cron/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cron/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cron/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/debian.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/default.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/fedora.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/freebsd.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/redhat.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/setup_cron/vars/suse.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cronvar/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/cronvar/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cronvar/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/cronvar/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/tasks/create_device.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/tasks/create_fs.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/tasks/overwrite_another_fs.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/vars/Ubuntu-14.04.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/filesystem/vars/default.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/tasks/port_test_cases.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/tasks/run_all_tests.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/tasks/service_test_cases.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/firewalld/tasks/source_test_cases.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/locale_gen/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/locale_gen/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/locale_gen/tasks/locale_gen.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/locale_gen/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/tasks/setup.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/tasks/teardown.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/tasks/test_grow_reduce.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/lvg/tasks/test_indempotency.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/mount/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/mount/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/osx_defaults/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/osx_defaults/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/selinux/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/selinux/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/selinux/tasks/selinux.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/selinux/tasks/selogin.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/seboolean/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/seboolean/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/seboolean/tasks/seboolean.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/sysctl/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/sysctl/files/sysctl.conf:
+    migrated_to: ansible.unix
+  test/integration/targets/sysctl/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/sysctl/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/run-test.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/tests/basic.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/tests/global-state.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/tests/insert_relative_to.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/ufw/tasks/tests/interface.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/aliases:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/defaults/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/meta/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/tasks/gquota.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/tasks/main.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/tasks/pquota.yml:
+    migrated_to: ansible.unix
+  test/integration/targets/xfs_quota/tasks/uquota.yml:
+    migrated_to: ansible.unix
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
