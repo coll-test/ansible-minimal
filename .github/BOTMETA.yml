@@ -2405,27 +2405,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/compat/unittest.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/compat/__init__.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/compat/builtins.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/procenv.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/yaml_helper.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/__init__.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/path.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/loader.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/mock/vault_helper.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/modules/utils.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2891,7 +2891,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: dell.os9
+    migrated_to: dell.os10
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -21070,6 +21070,98 @@ files:
     migrated_to: dell.os9
   test/integration/targets/dellos9_command/tests/cli/timeout.yaml:
     migrated_to: dell.os9
+  lib/ansible/plugins/action/dellos10.py:
+    migrated_to: dell.os10
+  lib/ansible/plugins/cliconf/dellos10.py:
+    migrated_to: dell.os10
+  lib/ansible/plugins/doc_fragments/dellos10.py:
+    migrated_to: dell.os10
+  lib/ansible/module_utils/network/dellos10/dellos10.py:
+    migrated_to: dell.os10
+  lib/ansible/module_utils/network/dellos10/__init__.py:
+    migrated_to: dell.os10
+  lib/ansible/modules/network/dellos10/dellos10_facts.py:
+    migrated_to: dell.os10
+  lib/ansible/modules/network/dellos10/dellos10_config.py:
+    migrated_to: dell.os10
+  lib/ansible/modules/network/dellos10/dellos10_command.py:
+    migrated_to: dell.os10
+  lib/ansible/plugins/terminal/dellos10.py:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/test_dellos10_facts.py:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/__init__.py:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/dellos10_module.py:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_interface__display-xml:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/dellos10_config_config.cfg:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_processes_node-id_1__grep_Mem_colon_:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_version:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_running-config:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_version__display-xml:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_lldp_neighbors__display-xml:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/show_system__display-xml:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/fixtures/dellos10_config_src.cfg:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/test_dellos10_config.py:
+    migrated_to: dell.os10
+  test/units/modules/network/dellos10/test_dellos10_command.py:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_facts/defaults/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_facts/tasks/cli.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_facts/tasks/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_facts/tests/cli/facts.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/defaults/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tasks/cli.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tasks/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/sublevel.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/sublevel_block.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/sublevel_exact.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/sublevel_strict.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/toplevel.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/toplevel_after.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/toplevel_before.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_config/tests/cli/toplevel_nonidempotent.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/defaults/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tasks/cli.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tasks/main.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tests/cli/bad_operator.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tests/cli/contains.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tests/cli/invalid.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tests/cli/output.yaml:
+    migrated_to: dell.os10
+  test/integration/targets/dellos10_command/tests/cli/timeout.yaml:
+    migrated_to: dell.os10
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
