@@ -1657,6 +1657,7 @@ files:
   $plugins/cliconf/voss.py:
     maintainers: $team_extreme
     labels: networking
+    migrated_to: extremenetworks.voss
   $plugins/cliconf/vyos.py:
     support: network
     maintainers: $team_networking
@@ -2018,6 +2019,7 @@ files:
     maintainers: $team_networking
   $plugins/terminal/voss.py:
     maintainers: $team_extreme
+    migrated_to: extremenetworks.voss
   $plugins/terminal/vyos.py:
     support: network
     maintainers: $team_networking
@@ -2408,27 +2410,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/compat/unittest.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/compat/__init__.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/compat/builtins.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/procenv.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/yaml_helper.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/__init__.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/path.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/loader.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/mock/vault_helper.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/modules/utils.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2894,7 +2896,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: extremenetworks.exos
+    migrated_to: extremenetworks.voss
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -21419,6 +21421,52 @@ files:
     migrated_to: extremenetworks.exos
   test/integration/targets/exos_command/tests/common/waitfor_multiple.yaml:
     migrated_to: extremenetworks.exos
+  lib/ansible/plugins/action/voss.py:
+    migrated_to: extremenetworks.voss
+  lib/ansible/module_utils/network/voss/voss.py:
+    migrated_to: extremenetworks.voss
+  lib/ansible/module_utils/network/voss/__init__.py:
+    migrated_to: extremenetworks.voss
+  lib/ansible/modules/network/voss/voss_facts.py:
+    migrated_to: extremenetworks.voss
+  lib/ansible/modules/network/voss/voss_config.py:
+    migrated_to: extremenetworks.voss
+  lib/ansible/modules/network/voss/voss_command.py:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/test_voss_facts.py:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/__init__.py:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_ipv6_address_interface:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_sys-info:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_config_src.cfg:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_interfaces_gigabitEthernet_interface:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_config_ipv6.cfg:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_lldp_neighbor:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_interfaces_gigabitEthernet_name:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/show_sys-info:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_config_config.cfg:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_running-config:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_ip_interface:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/fixtures/voss_facts_show_khi_performance_memory:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/voss_module.py:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/test_voss_config.py:
+    migrated_to: extremenetworks.voss
+  test/units/modules/network/voss/test_voss_command.py:
+    migrated_to: extremenetworks.voss
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
