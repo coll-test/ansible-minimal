@@ -2426,29 +2426,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/unittest.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/__init__.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/compat/builtins.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/procenv.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/__init__.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/path.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/loader.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/modules/utils.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.avi
+    migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2912,7 +2912,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.cnos
+    migrated_to: ansible.docker
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -9112,13 +9112,13 @@ files:
   test/integration/targets/elb_application_lb/tasks/test_multiple_actions_fail.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_remote_tmp_dir/handlers/main.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/default.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/main.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/setup_remote_tmp_dir/tasks/windows.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.docker
   test/integration/targets/efs/aliases:
     migrated_to: ansible.amazon
   test/integration/targets/efs/runme.sh:
@@ -11242,7 +11242,7 @@ files:
   test/integration/targets/setup_remote_constraints/tasks/main.yml:
     migrated_to: ansible.docker
   test/integration/targets/setup_epel/tasks/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/docker_volume/aliases:
     migrated_to: ansible.docker
   test/integration/targets/docker_volume/meta/main.yml:
@@ -11326,15 +11326,15 @@ files:
   test/integration/targets/docker_swarm/tasks/tests/remote-addr-pool.yml:
     migrated_to: ansible.docker
   test/integration/targets/setup_openssl/tasks/main.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/setup_openssl/vars/Debian.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/setup_openssl/vars/FreeBSD.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/setup_openssl/vars/RedHat.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/setup_openssl/vars/Suse.yml:
-    migrated_to: ansible.misc
+    migrated_to: ansible.docker
   test/integration/targets/docker_stack/aliases:
     migrated_to: ansible.docker
   test/integration/targets/docker_stack/files/stack_compose_base.yml:
