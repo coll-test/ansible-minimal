@@ -2426,29 +2426,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/compat/unittest.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/compat/__init__.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/compat/builtins.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/procenv.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/__init__.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/path.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/loader.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/modules/utils.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.avi
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2912,7 +2912,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.asa
+    migrated_to: ansible.avi
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -8792,9 +8792,9 @@ files:
   test/units/plugins/lookup/test_aws_secret.py:
     migrated_to: ansible.amazon
   test/units/plugins/lookup/__init__.py:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.avi
   test/units/plugins/lookup/fixtures/avi.json:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.avi
   test/units/plugins/lookup/test_aws_ssm.py:
     migrated_to: ansible.amazon
   test/integration/targets/sts_assume_role/aliases:
