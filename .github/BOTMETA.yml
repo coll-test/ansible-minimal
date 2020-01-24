@@ -2405,27 +2405,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/compat/unittest.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/compat/__init__.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/compat/builtins.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/procenv.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/yaml_helper.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/__init__.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/path.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/loader.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/mock/vault_helper.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/modules/utils.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/module_utils/conftest.py:
     migrated_to: cisco.meraki
   test/units/module_utils/network/aci/test_aci.py:
@@ -2891,7 +2891,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: dell.os6
+    migrated_to: dell.os9
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -20974,6 +20974,102 @@ files:
     migrated_to: dell.os6
   test/integration/targets/dellos6_command/tests/cli/timeout.yaml:
     migrated_to: dell.os6
+  lib/ansible/plugins/action/dellos9.py:
+    migrated_to: dell.os9
+  lib/ansible/plugins/cliconf/dellos9.py:
+    migrated_to: dell.os9
+  lib/ansible/plugins/doc_fragments/dellos9.py:
+    migrated_to: dell.os9
+  lib/ansible/module_utils/network/dellos9/dellos9.py:
+    migrated_to: dell.os9
+  lib/ansible/module_utils/network/dellos9/__init__.py:
+    migrated_to: dell.os9
+  lib/ansible/modules/network/dellos9/dellos9_facts.py:
+    migrated_to: dell.os9
+  lib/ansible/modules/network/dellos9/dellos9_config.py:
+    migrated_to: dell.os9
+  lib/ansible/modules/network/dellos9/dellos9_command.py:
+    migrated_to: dell.os9
+  lib/ansible/plugins/terminal/dellos9.py:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/test_dellos9_facts.py:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/__init__.py:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/dellos9_module.py:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_lldp_neighbors_detail:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_ipv6_interface:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/dellos9_config_src.cfg:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_version:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_interfaces:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_inventory:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_running-config__grep_hostname:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_memory__except_Processor:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/dellos9_config_config.cfg:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_running-config:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/fixtures/show_file-systems:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/test_dellos9_config.py:
+    migrated_to: dell.os9
+  test/units/modules/network/dellos9/test_dellos9_command.py:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_facts/defaults/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_facts/tasks/cli.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_facts/tasks/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_facts/tests/cli/facts.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/defaults/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tasks/cli.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tasks/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/sublevel.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/sublevel_block.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/sublevel_exact.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/sublevel_strict.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/toplevel.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/toplevel_after.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/toplevel_before.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_config/tests/cli/toplevel_nonidempotent.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/defaults/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tasks/cli.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tasks/main.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tests/cli/bad_operator.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tests/cli/contains.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tests/cli/invalid.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tests/cli/output.yaml:
+    migrated_to: dell.os9
+  test/integration/targets/dellos9_command/tests/cli/timeout.yaml:
+    migrated_to: dell.os9
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
