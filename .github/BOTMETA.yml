@@ -2424,27 +2424,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/compat/unittest.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/compat/__init__.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/compat/builtins.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/procenv.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/yaml_helper.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/__init__.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/path.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/loader.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/mock/vault_helper.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/modules/utils.py:
-    migrated_to: netapp.common
+    migrated_to: netapp.ontap
   test/units/module_utils/conftest.py:
     migrated_to: netapp.common
   test/units/module_utils/network/aci/test_aci.py:
@@ -2910,7 +2910,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.ontap
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -24479,6 +24479,280 @@ files:
     migrated_to: netapp.common
   lib/ansible/modules/storage/netapp/_sf_account_manager.py:
     migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/na_ontap_vserver_peer.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_vserver_cifs_security.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_vscan_scanner_pool.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_vscan_on_demand_task.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_vscan_on_access_policy.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_vscan.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_volume_clone.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_volume_autosize.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_volume.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_user_role.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_user.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_unix_user.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_unix_group.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ucadapter.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_svm_options.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_svm.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_software_update.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_snmp.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_snapshot_policy.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_snapshot.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_snapmirror.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_service_processor_network.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_security_key_manager.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_quotas.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_qtree.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_qos_policy_group.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_qos_adaptive_policy_group.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_portset.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ports.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_object_store.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_nvme_subsystem.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_nvme_namespace.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_nvme.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ntp.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_node.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_nfs.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_net_vlan.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_net_subnet.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_net_routes.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_net_port.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_net_ifgrp.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ndmp.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_motd.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_lun_map.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_lun_copy.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_lun.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_license.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ldap_client.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ldap.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_kerberos_realm.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_job_schedule.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_iscsi.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_ipspace.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_interface.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_info.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_igroup_initiator.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_igroup.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_flexcache.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_firmware_upgrade.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_firewall_policy.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_fcp.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_export_policy_rule.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_export_policy.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_dns.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_disks.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_command.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cluster_peer.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cluster_ha.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cluster.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cifs_server.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cifs_acl.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cifs.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_cg_snapshot.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_broadcast_domain_ports.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_broadcast_domain.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_autosupport.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/na_ontap_aggregate.py:
+    migrated_to: netapp.ontap
+  lib/ansible/modules/storage/netapp/_na_ontap_gather_facts.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_vserver_cifs_security.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/__init__.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_vscan_scanner_pool.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_vscan_on_demand_task.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_vscan_on_access_policy.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_vscan.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_volume_clone.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_volume_autosize.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_volume.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_user_role.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_user.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_unix_user.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_unix_group.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_ucadapter.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_svm.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_software_update.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_snapshot_policy.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_snapshot.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_snapmirror.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_service_processor_network.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_security_key_manager.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_quotas.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_qos_policy_group.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_qos_adaptive_policy_group.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_portset.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_ports.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_object_store.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_nvme_subsystem.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_nvme_namespace.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_nvme.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_nfs.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_net_subnet.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_net_routes.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_net_port.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_net_ifgrp.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_ndmp.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_motd.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_lun_map.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_lun_copy.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_kerberos_realm.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_job_schedule.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_ipspace.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_interface.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_info.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_igroup_initiator.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_igroup.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_flexcache.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_firmware_upgrade.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_firewall_policy.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_export_policy_rule.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_dns.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_command.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_cluster_peer.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_cluster.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_cifs_server.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_cifs.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_broadcast_domain.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_autosupport.py:
+    migrated_to: netapp.ontap
+  test/units/modules/storage/netapp/test_na_ontap_aggregate.py:
+    migrated_to: netapp.ontap
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
