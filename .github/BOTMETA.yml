@@ -290,7 +290,7 @@ files:
     labels: crypto
     maintainers: $team_crypto
     supershipit: felixfontein
-    migrated_to: ansible.misc
+    migrated_to: ansible.acme
   $modules/crypto/openssl_certificate.py:
     maintainers: ctrufan
     migrated_to: ansible.misc
@@ -2426,29 +2426,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/compat/unittest.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/compat/__init__.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/compat/builtins.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/procenv.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/yaml_helper.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/__init__.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/path.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/loader.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/mock/vault_helper.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/modules/utils.py:
-    migrated_to: netapp.elementsw
+    migrated_to: ansible.acme
   test/units/module_utils/conftest.py:
-    migrated_to: netapp.common
+    migrated_to: ansible.acme
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
