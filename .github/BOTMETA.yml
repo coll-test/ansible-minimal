@@ -2166,6 +2166,7 @@ files:
   test/units/module_utils/test_netapp.py:
     maintainers: $team_netapp
     support: community
+    migrated_to: netapp.common
   test/units/module_utils/hwc:
     maintainers: $team_huawei
   test/units/module_utils/acme: *id012
@@ -2423,29 +2424,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/compat/unittest.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/compat/__init__.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/compat/builtins.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/procenv.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/yaml_helper.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/__init__.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/path.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/loader.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/mock/vault_helper.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/modules/utils.py:
-    migrated_to: junipernetworks.junos
+    migrated_to: netapp.common
   test/units/module_utils/conftest.py:
-    migrated_to: google.cloud
+    migrated_to: netapp.common
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -24460,6 +24461,24 @@ files:
     migrated_to: junipernetworks.junos
   test/integration/targets/junos_banner/tests/netconf/net_banner.yml:
     migrated_to: junipernetworks.junos
+  lib/ansible/plugins/doc_fragments/netapp.py:
+    migrated_to: netapp.common
+  lib/ansible/module_utils/netapp.py:
+    migrated_to: netapp.common
+  lib/ansible/module_utils/netapp_module.py:
+    migrated_to: netapp.common
+  lib/ansible/module_utils/netapp_elementsw_module.py:
+    migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/_sf_volume_manager.py:
+    migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/_sf_volume_access_group_manager.py:
+    migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/_sf_snapshot_schedule_manager.py:
+    migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/_sf_check_connections.py:
+    migrated_to: netapp.common
+  lib/ansible/modules/storage/netapp/_sf_account_manager.py:
+    migrated_to: netapp.common
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
