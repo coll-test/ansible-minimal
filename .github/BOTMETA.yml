@@ -2426,27 +2426,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/compat/unittest.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/compat/__init__.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/compat/builtins.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/procenv.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/__init__.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/path.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/loader.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/modules/utils.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/module_utils/conftest.py:
     migrated_to: ansible.docker
   test/units/module_utils/network/aci/test_aci.py:
@@ -2912,7 +2912,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.frr
+    migrated_to: ansible.fortios
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
