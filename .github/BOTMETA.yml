@@ -1613,6 +1613,7 @@ files:
   $plugins/cliconf/ce.py:
     maintainers: $team_huawei
     labels: *id021
+    migrated_to: huawei.cloudengine
   $plugins/cliconf/edgeswitch.py:
     maintainers: f-bor
     migrated_to: ansible.misc
@@ -1949,6 +1950,7 @@ files:
   $plugins/netconf/ce.py:
     maintainers: $team_huawei
     labels: *id021
+    migrated_to: huawei.cloudengine
   $plugins/netconf/sros.py:
     maintainers: wisotzky $team_networking
     labels: networking
@@ -1968,6 +1970,7 @@ files:
   $plugins/terminal/ce.py:
     maintainers: $team_huawei
     labels: *id021
+    migrated_to: huawei.cloudengine
   $plugins/terminal/dellos10:
     maintainers: skg-net
   $plugins/terminal/edgeos.py:
@@ -2416,27 +2419,27 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/compat/unittest.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/compat/__init__.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/compat/builtins.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/procenv.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/yaml_helper.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/__init__.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/path.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/loader.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/mock/vault_helper.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/modules/utils.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/module_utils/conftest.py:
     migrated_to: google.cloud
   test/units/module_utils/network/aci/test_aci.py:
@@ -2902,7 +2905,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: google.cloud
+    migrated_to: huawei.cloudengine
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -23349,6 +23352,376 @@ files:
     migrated_to: google.cloud
   test/integration/targets/gcp_appengine_firewall_rule/tasks/main.yml:
     migrated_to: google.cloud
+  lib/ansible/plugins/action/ce.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/plugins/action/ce_template.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/plugins/doc_fragments/ce.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/module_utils/network/cloudengine/ce.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/module_utils/network/cloudengine/__init__.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vxlan_vap.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vxlan_tunnel.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vxlan_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vxlan_gateway.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vxlan_arp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vrrp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vrf_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vrf_af.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vrf.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_vlan.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_switchport.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_stp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_static_route_bfd.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_static_route.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_startup.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_user.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_traps.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_target_host.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_location.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_contact.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_snmp_community.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_sflow.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_rollback.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_reboot.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_ospf_vrf.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_ospf.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_ntp_auth.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_ntp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_netstream_template.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_netstream_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_netstream_export.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_netstream_aging.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_netconf.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_multicast_igmp_enable.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_multicast_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_mtu.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_mlag_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_mlag_config.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_mdn_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_lldp_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_lldp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_link_status.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_lacp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_is_is_view.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_is_is_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_is_is_instance.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_ip_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_interface_ospf.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_info_center_trap.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_info_center_log.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_info_center_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_info_center_debug.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_file_copy.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_facts.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_evpn_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_evpn_bgp_rr.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_evpn_bgp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_evpn_bd_vni.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_eth_trunk.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_dldp_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_dldp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_config.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_command.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bgp_neighbor_af.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bgp_neighbor.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bgp_af.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bgp.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bfd_view.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bfd_session.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_bfd_global.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_acl_interface.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_acl_advance.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_acl.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_aaa_server_host.py:
+    migrated_to: huawei.cloudengine
+  lib/ansible/modules/network/cloudengine/ce_aaa_server.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_static_route_bfd.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/__init__.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/ce_module.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_static_route_bfd/staticrtbase_1.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_static_route_bfd/result_ok.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp_interface/lldp_interface_changed.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_multicast_global/before.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_instance/before.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_interface/before_interface.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_multicast_igmp_enable/before.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp/result_ok.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_view/after.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp_interface/result_ok.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp/ce_lldp_global_00.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lacp/ce_lacp_10.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp_interface/lldp_interface_existing.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lacp/ce_lacp_01.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_view/before.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_mdn_interface/after.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp/ce_lldpSysParameter_00.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_static_route_bfd/staticrtbase_2.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_mdn_interface/before.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_static_route_bfd/srBfdPara_2.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp/ce_lldp_global_01.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_instance/after.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_is_is_interface/after_interface.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_multicast_igmp_enable/after.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lacp/ce_lacp_00.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_static_route_bfd/srBfdPara_1.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_multicast_global/after.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lacp/ce_lacp_11.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/fixtures/ce_lldp/ce_lldpSysParameter_01.txt:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_multicast_igmp_enable.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_multicast_global.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_mdn_interface.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_lldp_interface.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_lldp.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_lacp.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_is_is_view.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_is_is_interface.py:
+    migrated_to: huawei.cloudengine
+  test/units/modules/network/cloudengine/test_ce_is_is_instance.py:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_static_route_bfd/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_static_route_bfd/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_static_route_bfd/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_static_route_bfd/tests/netconf/ce_static_route_bfd.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_static_route_bfd/tests/netconf/cleanup.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_igmp_enable/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_igmp_enable/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_igmp_enable/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_igmp_enable/tests/netconf/ce_multicast_igmp_enable.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_global/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_global/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_global/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_multicast_global/tests/netconf/test_ce_multicast_global.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_mdn_interface/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_mdn_interface/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_mdn_interface/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_mdn_interface/tests/netconf/ce_mdn_interface.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp_interface/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp_interface/meta/main.yml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp_interface/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp_interface/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp_interface/tests/netconf/lldp_interface.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/meta/main.yml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/tests/netconf/absent.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/tests/netconf/clean.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lldp/tests/netconf/present.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tests/netconf/absent.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tests/netconf/delete.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tests/netconf/merge.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_lacp/tests/netconf/present.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/cleanup.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/setup.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_is_is_view_entity .yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_bfd.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_export.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_import.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_l1tol2.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_l2tol1.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_max_load.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_preferences.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_isis_view_basic.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_ce_issi_default.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_isis_filter_import.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_view/tests/netconf/test_isis_next_hop.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_interface/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_interface/meta/main.yml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_interface/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_interface/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_interface/tests/netconf/ce_is_is_interface.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_instance/defaults/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_instance/meta/main.yml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_instance/tasks/main.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_instance/tasks/netconf.yaml:
+    migrated_to: huawei.cloudengine
+  test/integration/targets/ce_is_is_instance/tests/netconf/ce_is_is_instance.yaml:
+    migrated_to: huawei.cloudengine
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
