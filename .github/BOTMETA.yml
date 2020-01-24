@@ -1250,6 +1250,7 @@ files:
     - huawei
     maintainers: $team_huawei
     support: community
+    migrated_to: huawei.cloud
   $module_utils/ipa.py:
     maintainers: $team_ipa
     migrated_to: ansible.misc
@@ -1746,6 +1747,7 @@ files:
     migrated_to: google.cloud
   $plugins/doc_fragments/hwc.py:
     maintainers: $team_huawei
+    migrated_to: huawei.cloud
   $plugins/doc_fragments/intersight.py: *id032
   $plugins/doc_fragments/mso.py: *id018
   $plugins/doc_fragments/mysql.py: *id004
@@ -23722,6 +23724,78 @@ files:
     migrated_to: huawei.cloudengine
   test/integration/targets/ce_is_is_instance/tests/netconf/ce_is_is_instance.yaml:
     migrated_to: huawei.cloudengine
+  lib/ansible/modules/cloud/huawei/hwc_vpc_subnet.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_security_group_rule.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_security_group.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_route.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_private_ip.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_port.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_peering_connect.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_vpc_eip.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_smn_topic.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_network_vpc.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_evs_disk.py:
+    migrated_to: huawei.cloud
+  lib/ansible/modules/cloud/huawei/hwc_ecs_instance.py:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_subnet/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_subnet/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_security_group_rule/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_security_group_rule/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_security_group/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_security_group/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_route/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_route/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_private_ip/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_private_ip/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_port/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_port/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_peering_connect/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_peering_connect/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_eip/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_vpc_eip/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_smn_topic/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_smn_topic/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_network_vpc/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_network_vpc/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_evs_disk/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_evs_disk/tasks/main.yml:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_ecs_instance/aliases:
+    migrated_to: huawei.cloud
+  test/integration/targets/hwc_ecs_instance/tasks/main.yml:
+    migrated_to: huawei.cloud
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
