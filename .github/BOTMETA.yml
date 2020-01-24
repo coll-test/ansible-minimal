@@ -2426,29 +2426,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/compat/unittest.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/compat/__init__.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/compat/builtins.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/procenv.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/yaml_helper.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/__init__.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/path.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/loader.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/mock/vault_helper.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/modules/utils.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/module_utils/conftest.py:
-    migrated_to: ansible.docker
+    migrated_to: ansible.hetzner
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2912,7 +2912,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: ansible.gitlab
+    migrated_to: ansible.hetzner
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -9302,7 +9302,7 @@ files:
   test/integration/targets/ec2_key/tasks/main.yml:
     migrated_to: ansible.amazon
   test/integration/targets/setup_sshkey/tasks/main.yml:
-    migrated_to: ansible.amazon
+    migrated_to: ansible.hetzner
   test/integration/targets/ec2_instance/aliases:
     migrated_to: ansible.amazon
   test/integration/targets/ec2_instance/inventory:
@@ -13594,41 +13594,41 @@ files:
   test/units/modules/net_tools/__init__.py:
     migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_dns_view.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_network_view.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_srv_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/fixtures/nios_result.txt:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_ptr_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_module.py:
     migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_cname_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_fixed_address.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_mx_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_zone.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_naptr_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/__init__.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_nsgroup.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_host_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_member.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_network.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_a_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/nios/test_nios_aaaa_record.py:
-    migrated_to: ansible.infoblox
+    migrated_to: ansible.hetzner
   test/units/modules/net_tools/test_hetzner_firewall.py:
     migrated_to: ansible.hetzner
   test/integration/targets/hcloud_volume_info/aliases:
