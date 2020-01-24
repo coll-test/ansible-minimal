@@ -1576,6 +1576,7 @@ files:
   $plugins/callback/grafana_annotations.py:
     maintainers: $team_grafana
     labels: monitoring grafana
+    migrated_to: ansible_community.grafana
   $plugins/callback/foreman.py:
     maintainers: $team_foreman
     migrated_to: ansible.misc
@@ -1859,6 +1860,7 @@ files:
   $plugins/lookup/grafana_dashboard.py:
     maintainers: $team_grafana
     labels: monitoring grafana
+    migrated_to: ansible_community.grafana
   $plugins/lookup/indexed_items.py:
     support: core
   $plugins/lookup/inventory_hostnames.py:
@@ -19246,6 +19248,32 @@ files:
     migrated_to: ansible.tower
   test/integration/targets/tower_credential/tasks/main.yml:
     migrated_to: ansible.tower
+  lib/ansible/modules/monitoring/grafana/grafana_plugin.py:
+    migrated_to: ansible_community.grafana
+  lib/ansible/modules/monitoring/grafana/grafana_datasource.py:
+    migrated_to: ansible_community.grafana
+  lib/ansible/modules/monitoring/grafana/grafana_dashboard.py:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/aliases:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/meta/main.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/tasks/cloudwatch.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/tasks/elastic.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/tasks/influx.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/tasks/main.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/grafana_datasource/tasks/postgres.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/setup_grafana/files/grafana.repo:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/setup_grafana/tasks/main.yml:
+    migrated_to: ansible_community.grafana
+  test/integration/targets/setup_grafana/tasks/setup.yml:
+    migrated_to: ansible_community.grafana
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
