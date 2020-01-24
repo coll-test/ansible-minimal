@@ -1957,6 +1957,7 @@ files:
   $plugins/netconf/sros.py:
     maintainers: wisotzky $team_networking
     labels: networking
+    migrated_to: nokia.sros
   $plugins/shell/:
     support: core
   $plugins/shell/powershell.py: *id031
@@ -2030,6 +2031,7 @@ files:
     migrated_to: ansible.netcommon
   $plugins/terminal/sros.py:
     maintainers: $team_networking
+    migrated_to: nokia.sros
   $plugins/terminal/voss.py:
     maintainers: $team_extreme
     migrated_to: extremenetworks.voss
@@ -24803,6 +24805,20 @@ files:
     migrated_to: netapp.elementsw
   test/units/modules/storage/netapp/test_na_elementsw_access_group.py:
     migrated_to: netapp.elementsw
+  lib/ansible/plugins/action/sros.py:
+    migrated_to: nokia.sros
+  lib/ansible/plugins/doc_fragments/sros.py:
+    migrated_to: nokia.sros
+  lib/ansible/modules/network/sros/sros_rollback.py:
+    migrated_to: nokia.sros
+  lib/ansible/modules/network/sros/sros_config.py:
+    migrated_to: nokia.sros
+  lib/ansible/modules/network/sros/sros_command.py:
+    migrated_to: nokia.sros
+  lib/ansible/module_utils/network/sros/sros.py:
+    migrated_to: nokia.sros
+  lib/ansible/module_utils/network/sros/__init__.py:
+    migrated_to: nokia.sros
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
