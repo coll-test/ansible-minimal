@@ -132,7 +132,9 @@ files:
     supershipit: $team_google
     maintainers: $team_google
     ignored: supertom
-  $modules/cloud/google/gc_storage.py: supertom
+  $modules/cloud/google/gc_storage.py:
+    maintainers: supertom
+    migrated_to: google.cloud
   $modules/cloud/hcloud/: &id039
     keywords:
     - hcloud
@@ -1239,6 +1241,7 @@ files:
   $module_utils/gcp_utils.py:
     maintainers: $team_google
     supershipit: $team_google
+    migrated_to: google.cloud
   $module_utils/gitlab.py: *id015
   $module_utils/hwc_utils.py:
     keywords: *id016
@@ -1739,6 +1742,7 @@ files:
     support: community
     supershipit: $team_google
     maintainers: $team_google
+    migrated_to: google.cloud
   $plugins/doc_fragments/hwc.py:
     maintainers: $team_huawei
   $plugins/doc_fragments/intersight.py: *id032
@@ -1801,6 +1805,7 @@ files:
   $plugins/inventory/gcp_compute.py:
     maintainers: $team_google
     supershipit: $team_google
+    migrated_to: google.cloud
   $plugins/inventory/hcloud.py: *id039
   $plugins/inventory/ini.py:
     support: core
@@ -2411,29 +2416,29 @@ files:
   lib/ansible/module_utils/network/aci/__init__.py:
     migrated_to: cisco.aci
   test/units/compat/mock.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/compat/unittest.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/compat/__init__.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/compat/builtins.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/procenv.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/yaml_helper.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/__init__.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/path.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/loader.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/mock/vault_helper.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/modules/utils.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/module_utils/conftest.py:
-    migrated_to: cisco.meraki
+    migrated_to: google.cloud
   test/units/module_utils/network/aci/test_aci.py:
     migrated_to: cisco.aci
   test/units/module_utils/network/aci/__init__.py:
@@ -2897,7 +2902,7 @@ files:
   test/units/plugins/cliconf/fixtures/nos/show_version:
     migrated_to: cisco.ios
   test/units/modules/conftest.py:
-    migrated_to: f5networks.f5_modules
+    migrated_to: google.cloud
   test/units/modules/network/ios/test_ios_vrf.py:
     migrated_to: cisco.ios
   test/units/modules/network/ios/__init__.py:
@@ -22136,6 +22141,1214 @@ files:
     migrated_to: f5networks.f5_modules
   test/units/modules/network/f5/test_bigip_gtm_facts.py:
     migrated_to: f5networks.f5_modules
+  lib/ansible/plugins/filter/gcp_kms_filters.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcpubsub_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcpubsub.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_tpu_node_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_tpu_node.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_storage_object.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_storage_bucket_access_control.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_storage_bucket.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_user_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_user.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_database_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sql_database.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_spanner_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_spanner_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_spanner_database_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_spanner_database.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sourcerepo_repository_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_sourcerepo_repository.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_serviceusage_service_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_serviceusage_service.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_runtimeconfig_variable_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_runtimeconfig_variable.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_runtimeconfig_config_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_runtimeconfig_config.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_resourcemanager_project_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_resourcemanager_project.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_redis_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_redis_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_pubsub_topic_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_pubsub_topic.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_pubsub_subscription_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_pubsub_subscription.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_mlengine_version_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_mlengine_version.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_mlengine_model_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_mlengine_model.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_logging_metric_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_logging_metric.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_kms_key_ring_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_kms_key_ring.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_kms_crypto_key_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_kms_crypto_key.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_iam_service_account_key.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_iam_service_account_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_iam_service_account.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_iam_role_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_iam_role.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_filestore_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_filestore_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_dns_resource_record_set_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_dns_resource_record_set.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_dns_managed_zone_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_dns_managed_zone.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_container_node_pool_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_container_node_pool.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_container_cluster_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_container_cluster.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_vpn_tunnel_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_vpn_tunnel.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_url_map_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_url_map.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_vpn_gateway_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_vpn_gateway.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_tcp_proxy_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_tcp_proxy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_ssl_proxy_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_ssl_proxy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_pool_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_pool.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_https_proxy_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_https_proxy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_http_proxy_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_target_http_proxy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_subnetwork_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_subnetwork.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_ssl_policy_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_ssl_policy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_ssl_certificate_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_ssl_certificate.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_snapshot_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_snapshot.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_router_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_router.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_route_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_route.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_reservation_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_reservation.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_region_disk_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_region_disk.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_region_backend_service_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_region_backend_service.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_node_template_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_node_template.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_node_group_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_node_group.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_network_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_network_endpoint_group_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_network_endpoint_group.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_network.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_interconnect_attachment_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_interconnect_attachment.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_template_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_template.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_group_manager_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_group_manager.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_group_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance_group.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_instance.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_image_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_image.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_https_health_check_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_https_health_check.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_http_health_check_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_http_health_check.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_health_check_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_health_check.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_global_forwarding_rule_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_global_forwarding_rule.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_global_address_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_global_address.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_forwarding_rule_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_forwarding_rule.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_firewall_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_firewall.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_disk_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_disk.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_backend_service_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_backend_service.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_backend_bucket_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_backend_bucket.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_autoscaler_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_autoscaler.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_address_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_compute_address.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudtasks_queue_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudtasks_queue.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudscheduler_job_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudscheduler_job.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudfunctions_cloud_function_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudfunctions_cloud_function.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudbuild_trigger_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_cloudbuild_trigger.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_bigquery_table_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_bigquery_table.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_bigquery_dataset_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_bigquery_dataset.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_appengine_firewall_rule_info.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gcp_appengine_firewall_rule.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_tag.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_snapshot.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_pd.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_net.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_mig.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_lb.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_labels.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_instance_template.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_img.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/gce_eip.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcspanner.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcpubsub_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_url_map.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_tpu_node_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_target_proxy.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_sql_user_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_sql_instance_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_sql_database_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_spanner_instance_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_spanner_database_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_sourcerepo_repository_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_resourcemanager_project_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_redis_instance_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_pubsub_topic_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_pubsub_subscription_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_iam_service_account_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_iam_role_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_healthcheck.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_forwarding_rule.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_dns_resource_record_set_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_dns_managed_zone_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_container_node_pool_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_container_cluster_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_vpn_tunnel_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_url_map_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_vpn_gateway_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_tcp_proxy_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_ssl_proxy_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_pool_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_https_proxy_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_target_http_proxy_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_subnetwork_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_ssl_policy_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_ssl_certificate_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_router_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_route_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_region_disk_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_network_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_interconnect_attachment_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_instance_template_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_instance_group_manager_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_instance_group_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_instance_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_image_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_https_health_check_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_http_health_check_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_health_check_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_global_forwarding_rule_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_global_address_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_forwarding_rule_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_firewall_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_disk_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_backend_service_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_backend_bucket_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_compute_address_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_cloudbuild_trigger_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_bigquery_table_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_bigquery_dataset_facts.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcp_backend_service.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gce.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcdns_zone.py:
+    migrated_to: google.cloud
+  lib/ansible/modules/cloud/google/_gcdns_record.py:
+    migrated_to: google.cloud
+  lib/ansible/module_utils/gcdns.py:
+    migrated_to: google.cloud
+  lib/ansible/module_utils/gce.py:
+    migrated_to: google.cloud
+  lib/ansible/module_utils/gcp.py:
+    migrated_to: google.cloud
+  lib/ansible/plugins/lookup/gcp_storage_file.py:
+    migrated_to: google.cloud
+  test/units/modules/cloud/google/test_gce_tag.py:
+    migrated_to: google.cloud
+  test/units/modules/cloud/google/__init__.py:
+    migrated_to: google.cloud
+  test/units/modules/cloud/google/test_gcp_url_map.py:
+    migrated_to: google.cloud
+  test/units/modules/cloud/google/test_gcp_forwarding_rule.py:
+    migrated_to: google.cloud
+  test/units/module_utils/gcp/test_utils.py:
+    migrated_to: google.cloud
+  test/units/module_utils/gcp/test_gcp_utils.py:
+    migrated_to: google.cloud
+  test/units/module_utils/gcp/test_auth.py:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_tpu_node/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_tpu_node/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_tpu_node/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_tpu_node/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_tpu_node/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_object/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_object/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_object/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket_access_control/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket_access_control/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket_access_control/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket_access_control/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket_access_control/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_storage_bucket/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_user/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_user/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_user/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_user/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_user/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_instance/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_database/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_database/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_database/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_database/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sql_database/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_instance/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_database/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_database/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_database/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_database/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_spanner_database/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sourcerepo_repository/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sourcerepo_repository/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sourcerepo_repository/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sourcerepo_repository/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_sourcerepo_repository/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_serviceusage_service/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_serviceusage_service/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_serviceusage_service/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_serviceusage_service/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_variable/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_variable/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_variable/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_variable/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_config/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_config/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_config/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_runtimeconfig_config/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_resourcemanager_project/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_resourcemanager_project/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_resourcemanager_project/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_resourcemanager_project/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_resourcemanager_project/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_redis_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_redis_instance/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_redis_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_redis_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_redis_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_topic/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_topic/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_topic/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_topic/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_topic/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_subscription/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_subscription/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_subscription/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_subscription/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_pubsub_subscription/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_version/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_version/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_version/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_version/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_version/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_model/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_model/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_model/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_model/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_mlengine_model/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_logging_metric/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_logging_metric/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_logging_metric/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_logging_metric/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_key_ring/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_key_ring/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_key_ring/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_key_ring/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_key_ring/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_crypto_key/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_crypto_key/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_crypto_key/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_crypto_key/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_kms_crypto_key/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account_key/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account_key/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account_key/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_service_account/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_role/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_role/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_role/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_role/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_iam_role/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_filestore_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_filestore_instance/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_filestore_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_filestore_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_filestore_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_resource_record_set/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_resource_record_set/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_resource_record_set/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_resource_record_set/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_resource_record_set/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_managed_zone/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_managed_zone/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_managed_zone/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_managed_zone/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_dns_managed_zone/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_node_pool/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_node_pool/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_node_pool/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_node_pool/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_node_pool/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_cluster/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_cluster/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_cluster/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_cluster/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_container_cluster/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_vpn_tunnel/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_vpn_tunnel/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_vpn_tunnel/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_vpn_tunnel/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_vpn_tunnel/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_url_map/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_url_map/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_url_map/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_url_map/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_url_map/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_vpn_gateway/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_vpn_gateway/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_vpn_gateway/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_vpn_gateway/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_vpn_gateway/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_tcp_proxy/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_tcp_proxy/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_tcp_proxy/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_tcp_proxy/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_tcp_proxy/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_ssl_proxy/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_ssl_proxy/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_ssl_proxy/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_ssl_proxy/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_ssl_proxy/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_pool/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_pool/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_pool/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_pool/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_pool/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_https_proxy/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_https_proxy/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_https_proxy/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_https_proxy/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_https_proxy/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_http_proxy/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_http_proxy/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_http_proxy/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_http_proxy/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_target_http_proxy/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_subnetwork/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_subnetwork/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_subnetwork/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_subnetwork/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_subnetwork/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_policy/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_policy/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_policy/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_policy/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_policy/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_certificate/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_certificate/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_certificate/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_certificate/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_ssl_certificate/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_snapshot/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_snapshot/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_snapshot/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_snapshot/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_snapshot/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_router/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_router/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_router/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_router/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_router/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_route/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_route/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_route/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_route/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_route/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_reservation/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_reservation/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_reservation/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_reservation/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_disk/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_disk/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_disk/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_disk/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_disk/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_backend_service/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_backend_service/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_backend_service/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_region_backend_service/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_template/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_template/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_template/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_template/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_group/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_group/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_group/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_node_group/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network_endpoint_group/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network_endpoint_group/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network_endpoint_group/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network_endpoint_group/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_network/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_interconnect_attachment/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_interconnect_attachment/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_interconnect_attachment/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_template/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_template/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_template/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_template/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_template/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group_manager/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group_manager/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group_manager/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group_manager/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group_manager/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance_group/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_instance/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_image/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_image/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_image/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_image/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_image/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_https_health_check/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_https_health_check/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_https_health_check/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_https_health_check/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_https_health_check/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_http_health_check/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_http_health_check/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_http_health_check/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_http_health_check/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_http_health_check/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_health_check/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_health_check/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_health_check/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_health_check/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_health_check/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_forwarding_rule/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_forwarding_rule/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_forwarding_rule/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_forwarding_rule/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_forwarding_rule/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_address/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_address/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_address/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_address/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_global_address/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_forwarding_rule/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_forwarding_rule/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_forwarding_rule/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_forwarding_rule/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_forwarding_rule/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_firewall/tasks/update.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_disk/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_disk/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_disk/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_disk/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_disk/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_service/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_service/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_service/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_service/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_service/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_bucket/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_bucket/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_bucket/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_bucket/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_backend_bucket/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_autoscaler/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_autoscaler/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_autoscaler/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_autoscaler/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_autoscaler/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_address/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_address/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_address/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_address/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_compute_address/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudtasks_queue/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudtasks_queue/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudtasks_queue/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudtasks_queue/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudtasks_queue/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudscheduler_job/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudscheduler_job/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudscheduler_job/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudscheduler_job/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudscheduler_job/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudfunctions_cloud_function/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudfunctions_cloud_function/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudfunctions_cloud_function/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudfunctions_cloud_function/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudfunctions_cloud_function/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudbuild_trigger/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudbuild_trigger/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_cloudbuild_trigger/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_table/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_table/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_table/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_table/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_table/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_dataset/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_dataset/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_dataset/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_dataset/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_bigquery_dataset/tasks/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_appengine_firewall_rule/aliases:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_appengine_firewall_rule/defaults/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_appengine_firewall_rule/meta/main.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_appengine_firewall_rule/tasks/autogen.yml:
+    migrated_to: google.cloud
+  test/integration/targets/gcp_appengine_firewall_rule/tasks/main.yml:
+    migrated_to: google.cloud
 macros:
   module_utils: lib/ansible/module_utils
   modules: lib/ansible/modules
